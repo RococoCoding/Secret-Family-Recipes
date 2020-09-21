@@ -38,7 +38,8 @@ html {
 	font-family: 'Noto Serif', serif;
 }
 body {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
+	background-color: var(--whitish);
 }
 
 a {
@@ -46,7 +47,7 @@ a {
 	text-decoration: none;
 }
 
-/* #region header */
+/* #region header/nav */
 
 nav {
 	display: flex;
@@ -90,7 +91,7 @@ h1 {
 /* #endregion */
 
 
-/* #region intro */
+/* #region index intro */
 .intro {
 	display: flex;
 	justify-content: space-between;
@@ -147,7 +148,7 @@ ul, ol {
 /* #endregion */
 
 
-/* #region features */
+/* #region index features */
 .features {
 	display: flex;
 	flex-direction: column;
@@ -169,6 +170,49 @@ ul, ol {
 	color: var(--greyish);
 	font-size: 2rem;
 	text-align: center;
+}
+
+/* #endregion */
+
+/* #region faq */
+
+.faq {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 95%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 4rem;
+	margin: 1% 0;
+}
+
+.faq div {
+	width: 40%;
+	border: 1px solid var(--pastelgreen);
+	padding: 1%;
+	font-size: 2rem;
+	margin: 2% 0;
+}
+
+.faq h3 {
+	font-size: 3rem;
+	margin-bottom: 3%;
+}
+
+.faq p {
+	margin-bottom: 2%;
+}
+
+.question {
+	margin-top: 4%;
+}
+
+.answer {
+	font-size: 1.6rem;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* #endregion */
