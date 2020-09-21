@@ -42,18 +42,21 @@ body {
 }
 
 a {
+	color: var(--whitish);
 	text-decoration: none;
 }
+
+/* #region header */
 
 nav {
 	display: flex;
 	background-color: var(--greyish);
-	height: 10vh;
+	max-height: 10vh;
+	min-height: fit-content;
 	font-size: 2.5rem;
+	padding: 0.75%;
 }
-nav a {
-	color: var(--whitish);
-}
+
 h1 {
 	width: 25%;
 	font-family: 'Courgette', cursive;
@@ -84,7 +87,101 @@ h1 {
 .login a {
 	color: var(--pastelgreen)
 }
+/* #endregion */
 
+
+/* #region intro */
+.intro {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkergreen);
+	padding: 2%
+}
+
+.pitch {
+	width: 50%;
+	margin: auto;
+	font-size: 4rem;
+	color: var(--peachy);
+}
+
+.pitch p {
+	font-size: 3rem;
+	color: var(--whitish);
+}
+
+.card {
+	max-width: 50%;
+	height: 93%;
+	border-radius: 15px;
+	margin: 1.2% 1%;
+	background-color: var(--whitish);
+	font-family: 'Courgette', cursive;
+	line-height: 2.2vh;
+}
+
+.card p {
+	font-weight: bold;
+}
+
+.card p, li {
+	padding-left: 2%;
+	border-bottom: 1px solid blue;
+}
+
+.card .title {
+	text-align: center;
+	font-size: 2rem;
+	line-height: 3.2vh;
+	border-bottom: 1px solid red;
+}
+
+.last {
+	border: none;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+/* #endregion */
+
+
+/* #region features */
+.features {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 70%;
+	margin: 3% auto 0 auto;
+}
+
+.features div {
+	margin-bottom: 5%;
+}
+
+.features img {
+	float: left;
+	margin-right: 2%;
+}
+
+.features p {
+	color: var(--greyish);
+	font-size: 2rem;
+	text-align: center;
+}
+
+/* #endregion */
+
+.signup {
+	text-align: center;
+	background-color: var(--darkergreen);
+	width: 30%;
+	margin: 0 auto 2% auto;
+	font-size: 4rem;
+	padding: 1%;
+	border-radius: 15px;
+}
 
 footer {
 	text-align: center;
