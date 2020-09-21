@@ -140,6 +140,11 @@ img{
     line-height: 10rem;
 }
 
+.pastelgreen {
+    background-color: var(--pastelgreen);
+    padding:1%;
+}
+
 /* Footer Styles - Desktop */
 
 footer {
