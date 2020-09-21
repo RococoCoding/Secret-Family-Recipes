@@ -142,7 +142,23 @@ img{
 
 .pastelgreen {
     background-color: var(--pastelgreen);
-    padding:1%;
+    padding:0.5%;
+}
+
+.about-content{
+    text-align: center;
+    padding:5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--greyish);
+}
+
+h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 5rem;
+    color: var(--greyish);
 }
 
 /* Footer Styles - Desktop */
