@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 1px black solid;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,4 +49,102 @@ table {
 
 /* General Styles */
 
-/* Header Styles - Desktop*/
+:root {
+	--peachy: #FFD6BA;
+	--whitish: #FAF9F9;
+	--pastelgreen: #BEE3DB;
+	--darkergreen: #89B0AE;
+	--greyish: #555B6E;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Noto Serif', serif;
+}
+body {
+    font-size: 1.3rem;
+}
+
+/* Header Styles - Desktop */
+
+a {
+	text-decoration: none;
+}
+nav {
+	display: flex;
+	background-color: var(--greyish);
+	height: 10vh;
+	font-size: 2.5rem;
+}
+nav a {
+	color: var(--whitish);
+}
+nav a:hover {
+    color: var(--peachy);
+    transition-duration: 1s;
+}
+h1 {
+	width: 25%;
+	font-family: 'Courgette', cursive;
+	font-size: 4rem;
+	margin: auto 0;
+	padding-left: 2%;
+	color: var(--pastelgreen);
+}
+.links {
+	text-align: center;
+	margin: auto 0;
+    width: 50%;
+    color: var(--whitish);
+}
+.links a {
+	color: var(--whitish);
+    padding: 0 5%;
+    font-size: 2.5rem;
+}
+.login {
+	width: 25%;
+	text-align: right;
+	margin: auto 0;
+    padding-right: 1%;
+    color: var(--whitish);
+    font-family: 'Courgette', cursive;
+    font-size: 3.5rem;
+}
+.login a {
+    color: var(--pastelgreen);
+    padding:0 3%;
+}
+
+/* Body Styles - Desktop */
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Footer Styles - Desktop */
+
+footer {
+    text-align: center;
+    background-color: var(--greyish);
+    height: 5vh;
+    padding: 1%;
+    color: var(--whitish);
+}
+footer a {
+    color: var(--whitish);
+    font-size: 2rem;
+    padding:0 1%;
+    transition-duration: 1s;
+}
+footer a:hover {
+    color: var(--peachy);
+  }
+small {
+	display: block;
+    font-size: 1rem;
+    padding:1% 0;
+
+}
