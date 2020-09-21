@@ -239,3 +239,78 @@ small {
 	display: block;
 	font-size: 1rem;
 }
+
+
+@media (max-width: 500px) {
+	/* #region nav */
+	html {
+		font-size: 30%;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	h1 {
+		padding-right: 3%;
+	}
+
+	.links {
+		font-size: 2rem;
+		width:  50%;
+	}
+
+	.login {
+		display: flex;
+		flex-wrap: wrap;
+		width: max-content;
+		padding-left: 3%;
+		padding-right: 0;
+	}
+
+	nav .login a {
+		text-align: right;
+	}
+	/* #endregion */
+	
+	/* #region index */
+	.intro {
+		flex-direction: column;
+	}
+
+	.pitch {
+		font-size: 3.5rem;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 3%;
+	}
+
+	.sample-card {
+		max-width: 80%;
+		width: 70%;
+		margin: 3% auto;
+		line-height: 2rem;
+	}
+
+	.sample-card .title {
+		line-height: 2.7rem;
+	}
+
+	.features div {
+		margin-bottom: 8%;
+	}
+
+	.features img {
+		margin-bottom: 2%;
+	}
+
+	.signup {
+		width: 50%;
+		border-radius: 10px;
+	}
+
+}
+
+@media (max-width: 1032px) {
+	
+}
