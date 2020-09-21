@@ -110,7 +110,7 @@ h1 {
 	color: var(--whitish);
 }
 
-.card {
+.sample-card {
 	max-width: 50%;
 	height: 93%;
 	border-radius: 15px;
@@ -120,16 +120,16 @@ h1 {
 	line-height: 2.2vh;
 }
 
-.card p {
+.sample-card p {
 	font-weight: bold;
 }
 
-.card p, li {
+.sample-card p, li {
 	padding-left: 2%;
 	border-bottom: 1px solid blue;
 }
 
-.card .title {
+.sample-card .title {
 	text-align: center;
 	font-size: 2rem;
 	line-height: 3.2vh;
