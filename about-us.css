@@ -114,15 +114,23 @@ h1 {
     padding:0 3%;
 }
 
-/* Body Styles - Desktop */
+/* Main Content Styles - Desktop */
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     height: 30%;
-    background-size: contain;
+    position: relative;
+}
+
+.box p {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 /* Footer Styles - Desktop */
