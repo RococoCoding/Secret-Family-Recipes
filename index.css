@@ -25,9 +25,76 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+:root {
+	--peachy: #FFD6BA;
+	--whitish: #FAF9F9;
+	--pastelgreen: #BEE3DB;
+	--darkergreen: #89B0AE;
+	--greyish: #555B6E;
+}
+
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
+	font-family: 'Noto Serif', serif;
 }
 body {
     font-size: 1.3rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	display: flex;
+	background-color: var(--greyish);
+	height: 10vh;
+	font-size: 2.5rem;
+}
+nav a {
+	color: var(--whitish);
+}
+h1 {
+	width: 25%;
+	font-family: 'Courgette', cursive;
+	font-size: 4rem;
+	margin: auto 0;
+	padding-left: 1%;
+	color: var(--pastelgreen);
+}
+
+.links {
+	text-align: center;
+	margin: auto 0;
+	width: 50%;
+}
+
+.links a {
+	color: var(--pastelgreen);
+	padding: 0 2%;
+}
+
+.login {
+	width: 25%;
+	text-align: right;
+	margin: auto 0;
+	padding-right: 1%;
+}
+
+.login a {
+	color: var(--pastelgreen)
+}
+
+
+footer {
+	text-align: center;
+}
+
+footer a {
+	color: var(--greyish);
+}
+
+small {
+	display: block;
+	font-size: 1rem;
 }
