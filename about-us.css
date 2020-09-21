@@ -122,12 +122,12 @@ img{
     position: relative;
 }
 
-.box img {
+.main-content img {
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
 }
 
-.box p {
+.main-content p {
     color: white;
     font-size: 10Rem;
     font-family: 'Kumbh Sans', sans-serif;
@@ -145,13 +145,17 @@ img{
     padding:0.5%;
 }
 
+/* About-Content Styles - Desktop */
+
 .about-content{
     text-align: center;
-    padding:5%;
+    padding:4%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--greyish);
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 h2{
@@ -159,6 +163,48 @@ h2{
     padding: 2%;
     font-size: 5rem;
     color: var(--greyish);
+}
+
+/* App-Features Styles - Desktop */
+
+.features{
+    text-align: center;
+    
+}
+
+.app-features div{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+}
+
+.features-content{
+    padding: 2% 5%;
+    width: 23%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+/* Meet-the-Team Styles - Desktop */
+
+h4{
+    color: var(--greyish);
+}
+
+.team-containers{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 20%;
+}
+
+.team-containers img{
+    border-radius: 10px;
+    margin: 5%;
 }
 
 /* Footer Styles - Desktop */
