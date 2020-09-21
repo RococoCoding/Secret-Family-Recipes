@@ -156,6 +156,7 @@ img{
     color: var(--greyish);
     font-size: 1.5rem;
     line-height: 2rem;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 h2{
@@ -178,12 +179,26 @@ h2{
     justify-content: center;
 }
 
+.app-features img{
+    width: 200px;
+}
+
+.app-features h3{
+    font-size: 1.5rem;
+}
+
 .features-content{
     padding: 2% 5%;
     width: 23%;
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: center;
+    color: var(--darkergreen);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+hr{
+    width: 90%;
 }
 
 
@@ -193,13 +208,15 @@ h4{
     color: var(--greyish);
 }
 
-.team-containers{
-    height: 100%;
+.team-container{
+    height: 20%;
+    margin: auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    width: 20%;
+}
+
+.team-containers{
+
+    color: var(--darkergreen);
 }
 
 .team-containers img{
