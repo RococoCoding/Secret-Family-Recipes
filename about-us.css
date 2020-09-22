@@ -112,7 +112,11 @@ h1 {
 }
 .login a {
     color: var(--pastelgreen);
+<<<<<<< HEAD
     padding:0 3%;
+=======
+    padding: 0 3%;
+>>>>>>> 7b139e6fbcb1ae33628564e3f2d00fdc3d03063e
 }
 
 /* Main Content Styles - Desktop */
