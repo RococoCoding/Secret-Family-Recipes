@@ -300,23 +300,36 @@ small {
     color: var(--pastelgreen);
 }
 
-@media (max-width: 700px) {
-	h1 {
-		line-height: 4rem;
-		width: 25%;
-	}
-	
-	.links {
-		width: 75%;
+@media only screen and (max-width: 800px) {
+	.links a{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .login a{
+        font-size: 1.5rem;
+    }
+
+	.sample-card li, p{
+		line-height: 1.75rem;
 	}
 
-	.links a {
-		padding: 2%;
+	h2 {
+		font-size: 3.5rem;
+		margin-bottom: 3%;
 	}
 
-	.login {
-		width: max-content;
+	.testimonials p {
+		line-height: 2rem;
+		font-size: 1.7rem;
 	}
+
+	.signup {
+		width: 45%;
+		padding: 1% 1% 1.5% 1%;
+	}
+
 } 
 
 @media (max-width: 500px) {
@@ -330,6 +343,7 @@ small {
 	}
 
 	h1 {
+		font-size: 3rem;
 		width: 25%;
 		padding-left: 1%;
 	}
@@ -343,15 +357,17 @@ small {
 		/* background-color: var(--pastelgreen); */
 		color: var(--whitish);
 		border-radius: 5px;
+		padding: 2%;
 	}
 
 	.login {
 		width: 25%;
 	}
 
-	nav .login a {
+	.login a {
 		line-height: 4rem;
 		text-align: right;
+		font-size: 2rem;
 	}
 	/* #endregion */
 	
@@ -416,4 +432,5 @@ small {
         font-size: 1.2rem;
         padding:3% 0;
         color: var(--pastelgreen);
-    }
+	}
+}

@@ -110,6 +110,7 @@ h1 {
 }
 .login a {
     color: var(--pastelgreen);
+    padding: 0 3%;
 }
 
 /* Main Content Styles - Desktop */
