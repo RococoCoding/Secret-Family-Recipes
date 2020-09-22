@@ -112,7 +112,7 @@ h1 {
     color: var(--pastelgreen);
 }
 
-/* Main Content Styles - Desktop */
+/* Main-Content Styles - Desktop */
 
 .main-content img {
     -webkit-filter: brightness(0.7);
@@ -120,7 +120,7 @@ h1 {
     width: 100%;
 }
 .main-content p {
-    color: white;
+    color: var(--whitish);
     font-size: 6Rem;
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0;
@@ -141,7 +141,7 @@ h1 {
     padding:0.5%;
 }
 
-/* About-Content Styles - Desktop */
+/* Blog-Content Styles - Desktop */
 
 .blog-content{
     text-align: center;
@@ -236,6 +236,7 @@ small {
     color: var(--pastelgreen);
 }
 
+/* Tablet Styles */
 /* Header Styles - Tablet */
 
 @media only screen and (max-width: 800px){
@@ -252,7 +253,6 @@ small {
     /* Main-Content Styles - Tablet */
 
     .main-content p {
-        color: var(--whitish);
         font-size: 5Rem;
         transform: translate(-50%,-90%);
     }
@@ -260,20 +260,83 @@ small {
     /* Blog-Posts Styles - Tablet */
 
     .blog-posts img{
+        margin-left: auto;
+        margin-right: auto;
         width: 50%;
         max-width: 100%;
         height: 100%;
         border-radius: 40px;
-        display: flex;
-        align-content: center;
     }
     .blog-container1-3{
         display: block;
-        background-color: var(--peachy);
+        padding: 2% 0;
+    }
+    .blog-container2-4{
+        display: block;
+        padding: 2% 0;
     }
     .blog-content h3{
         font-size: 3rem;
         padding: 0 3%;
     }
+    .blog-content{
+        padding: 1% 5%;
+    }
+}
+
+/* Phone Styles */
+/* Header Styles - Phone */
+
+@media only screen and (max-width: 500px){
+
+    .links {
+        padding: 0;
+    }
+    .links a{
+        font-size: 1.3rem;
+        padding: 1%;
+    }
+    h1{
+        font-size: 2rem;
+        width: 20%;
+    }
+    .login a{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    /* Main-Content Styles - Tablet */
+
+    h2{
+        font-size: 2rem;
+    }
+    .main-content p {
+        font-size: 4rem;
+        transform: translate(-50%, -180%);
+        line-height: 4rem;
+        padding: 0;
+        margin: auto 0;
+    }
+    .blog-content{
+        font-size: 1.3rem;
+        padding: 3%;
+    }
+    .blog-container1-3 h3{
+        font-size: 1.8rem;
+    }
+    .blog-container1-3 p{
+        font-size: 1.2rem;
+        padding: 3%;
+    }
+    .blog-container2-4 h3{
+        font-size: 1.8rem;
+    }
+    .blog-container2-4 p{
+        font-size: 1.2rem;
+        padding: 3%;
+    }
+    
+    /* Footer Styles - Phone */
+
 
 }
