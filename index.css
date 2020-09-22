@@ -119,7 +119,7 @@ h1 {
 }
 
 .sample-card {
-	min-width: 400px;
+	/* min-width: 400px; */
 	height: 93%;
 	border-radius: 15px;
 	margin: 1.2% 1%;
@@ -156,8 +156,8 @@ ul, ol {
 /* #endregion */
 
 
-/* #region index features */
-.features {
+/* #region index testimonials */
+.testimonials {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -165,19 +165,22 @@ ul, ol {
 	margin: 3% auto 0 auto;
 }
 
-.features div {
+.testimonials div {
+	display: flex;
 	margin-bottom: 5%;
 }
 
-.features img {
+.testimonials img {
 	float: left;
 	margin-right: 2%;
+	width: 30%;
 }
 
-.features p {
+.testimonials p {
 	color: var(--greyish);
 	font-size: 2rem;
 	text-align: center;
+	align-self: center;
 }
 
 /* #endregion */
@@ -235,6 +238,10 @@ h2 {
 	border-radius: 15px;
 }
 
+.signup a:hover {
+	color: var(--peachy);
+}
+
 footer {
     text-align: center;
     background-color: var(--greyish);
@@ -243,15 +250,18 @@ footer {
     color: var(--whitish);
     font-size:2.5rem;
 }
+
 footer a {
     color: var(--whitish);
     font-size: 2.5rem;
     padding:0 1%;
     transition-duration: 1s;
 }
+
 footer a:hover {
     color: var(--peachy);
-  }
+}
+
 small {
 	display: block;
     font-size: 1.2rem;
@@ -314,11 +324,11 @@ small {
 		line-height: 2.7rem;
 	}
 
-	.features div {
+	.testimonials div {
 		margin-bottom: 8%;
 	}
 
-	.features img {
+	.testimonials img {
 		margin-bottom: 2%;
 	}
 
