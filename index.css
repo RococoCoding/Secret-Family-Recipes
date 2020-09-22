@@ -119,13 +119,14 @@ h1 {
 }
 
 .sample-card {
-	/* min-width: 400px; */
+	width: 400px; /* max content not including padding-left in li item, even with border box*/
 	height: 93%;
 	border-radius: 15px;
 	margin: 1.2% 1%;
 	background-color: var(--whitish);
 	font-family: 'Courgette', cursive;
 	line-height: 2.2vh;
+	box-sizing: border-box;
 }
 
 .sample-card p {
@@ -133,7 +134,7 @@ h1 {
 }
 
 .sample-card p, li {
-	box-sizing: border-box;
+	/* box-sizing: border-box; not working, hence width static at 400px :(( */ 
 	border-bottom: 1px solid blue;
 	padding-left: 2%;
 }
@@ -152,6 +153,7 @@ h1 {
 ul, ol {
 	list-style-position: inside;
 }
+
 
 /* #endregion */
 
