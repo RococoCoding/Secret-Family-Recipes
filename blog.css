@@ -335,8 +335,24 @@ small {
         font-size: 1.2rem;
         padding: 3%;
     }
+    button{
+        font-size: 1.3rem;   
+    }
     
     /* Footer Styles - Phone */
 
-
+    footer {
+        height: 7vh;
+        padding: 5%;
+    }
+    footer a {
+        color: var(--whitish);
+        font-size: 1.5rem;
+        padding: 3% 0;
+    }
+    small {
+        font-size: 1.2rem;
+        padding:3% 0;
+        color: var(--pastelgreen);
+    }
 }
