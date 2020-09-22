@@ -131,6 +131,11 @@ h1 {
     left: 50%;
     line-height: 8rem;
 }
+.peachy{
+    background-color: var(--peachy);
+    padding:0.5;
+    height:2vh;
+}
 .pastelgreen {
     background-color: var(--pastelgreen);
     padding:0.5%;
