@@ -217,10 +217,14 @@ ul, ol {
 /* #endregion */
 
 /* #region faq */
+.body-faq {
+	background-color: var(--pastelgreen);
+}
+
 
 .faq {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	width: 95%;
 }
@@ -228,27 +232,35 @@ ul, ol {
 h2 {
 	text-align: center;
 	font-size: 4rem;
-	margin: 1% 0;
-	color: var(--greyish);
+	margin-top: 2%;
+	color: black;
 }
 
 .faq div {
-	width: 40%;
-	border: 1px solid var(--pastelgreen);
+	width: 35%;
+	border: 1px solid var(--greyish);
 	padding: 1%;
 	font-size: 2rem;
-	margin: 2% 0;
+	margin: 3% 0;
+	background-color: var(--pastelgreen);
 }
 
 .faq h3 {
 	font-size: 3rem;
-	margin-bottom: 3%;
+	margin: -3.4% -3% 3% -3%;
+	color: var(--peachy);
+	background-color: var(--greyish);
+	padding: 2%;
+	text-align: center;
 }
 
 .faq p {
 	margin-bottom: 2%;
 }
 
+.faq a {
+	color: var(--greyish);
+}
 .question {
 	margin-top: 4%;
 }
