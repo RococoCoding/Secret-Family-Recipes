@@ -73,7 +73,6 @@ nav {
 	display: flex;
 	background-color: var(--greyish);
 	height: 10vh;
-	font-size: 2.5rem;
 }
 nav a {
 	color: var(--whitish);
@@ -83,9 +82,9 @@ nav a:hover {
     transition-duration: 1s;
 }
 h1 {
-	width: 25%;
+	width: 40%;
 	font-family: 'Courgette', cursive;
-	font-size: 4rem;
+	font-size: 3rem;
 	margin: auto 0;
 	padding-left: 2%;
 	color: var(--pastelgreen);
@@ -93,43 +92,36 @@ h1 {
 .links {
 	text-align: center;
 	margin: auto 0;
-    width: 50%;
+    width: 100%;
     color: var(--whitish);
 }
 .links a {
 	color: var(--whitish);
     padding: 0 5%;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .login {
-	width: 25%;
 	text-align: right;
-	margin: auto 0;
-    padding-right: 1%;
     color: var(--whitish);
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: auto 0;
+    width: 40%;
+    padding-right: 2%;
 }
 .login a {
     color: var(--pastelgreen);
-    padding:0 3%;
 }
 
 /* Main Content Styles - Desktop */
 
-img{
-    width: 100%;
-    height: 30%;
-    position: relative;
-}
-
 .main-content img {
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
+    width: 100%;
 }
-
 .main-content p {
     color: white;
-    font-size: 10Rem;
+    font-size: 6Rem;
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0;
     transform: translate(-50%,-50%);
@@ -137,9 +129,8 @@ img{
     position: absolute;
     top: 50%;
     left: 50%;
-    line-height: 10rem;
+    line-height: 8rem;
 }
-
 .pastelgreen {
     background-color: var(--pastelgreen);
     padding:0.5%;
@@ -158,7 +149,6 @@ img{
     line-height: 2rem;
     font-family: 'Kumbh Sans', sans-serif;
 }
-
 h2{
     text-align: center;
     padding: 2%;
@@ -168,35 +158,35 @@ h2{
 
 /* App-Features Styles - Desktop */
 
-.features{
-    text-align: center;
-    
-}
-
-.app-features div{
+.app-features{
     display: flex;
-    flex-wrap: row wrap;
-    justify-content: center;
 }
-
+.features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    padding: 2%;
+}
 .app-features img{
-    width: 200px;
+    width: 120px;
 }
-
 .app-features h3{
-    font-size: 1.5rem;
+    font-size: 2.3rem;
+    color: var(--greyish);
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 5% 0;
 }
-
 .features-content{
-    padding: 2% 5%;
-    width: 23%;
+    padding: 0 5%;
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: center;
     color: var(--darkergreen);
     font-family: 'Kumbh Sans', sans-serif;
 }
-
 hr{
     width: 90%;
 }
@@ -207,21 +197,26 @@ hr{
 h4{
     color: var(--greyish);
 }
-
 .team-container{
-    height: 20%;
     margin: auto;
     display: flex;
-}
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
 .team-containers{
-
+    width:24%;
     color: var(--darkergreen);
+    text-align: center;
+    padding: 1% 3%;
 }
-
 .team-containers img{
     border-radius: 10px;
-    margin: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+.team-containers p{
+    padding: 2% 0;
 }
 
 /* Footer Styles - Desktop */
@@ -232,17 +227,16 @@ footer {
     height: 5vh;
     padding: 2%;
     color: var(--whitish);
-    font-size:2.5rem;
 }
 footer a {
     color: var(--whitish);
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding:0 1%;
     transition-duration: 1s;
 }
 footer a:hover {
     color: var(--peachy);
-  }
+}
 small {
 	display: block;
     font-size: 1.2rem;
