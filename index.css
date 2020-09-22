@@ -200,6 +200,7 @@ h2 {
 	text-align: center;
 	font-size: 4rem;
 	margin: 1% 0;
+	color: var(--greyish);
 }
 
 .faq div {
@@ -282,23 +283,30 @@ small {
 	}
 
 	h1 {
-		padding-right: 3%;
+		padding-right: 1%;
 	}
 
 	.links {
-		font-size: 2rem;
-		width:  50%;
+		width:  70%;
+	}
+
+	.links a {
+		padding: 2%;
+		font-size: 2.2rem;
+		background-color: var(--pastelgreen);
+		color: var(--greyish);
+		border-radius: 5px;
 	}
 
 	.login {
 		display: flex;
 		flex-wrap: wrap;
-		width: max-content;
-		padding-left: 3%;
-		padding-right: 0;
+		width: 20%;
+		padding-left: 1%;
 	}
 
 	nav .login a {
+		line-height: 4rem;
 		text-align: right;
 	}
 	/* #endregion */
@@ -326,12 +334,22 @@ small {
 		line-height: 2.7rem;
 	}
 
+	h2 {
+		font-size: 3rem;
+		margin-bottom: 4%;
+	}
+
 	.testimonials div {
 		margin-bottom: 8%;
+		
+	}
+	.testimonials p{
+		font-size: 1.5rem;
 	}
 
 	.testimonials img {
 		margin-bottom: 2%;
+		object-fit: cover;
 	}
 
 	.signup {
