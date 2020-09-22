@@ -49,45 +49,52 @@ a {
 
 /* #region header/nav */
 
+
 nav {
 	display: flex;
 	background-color: var(--greyish);
-	max-height: 10vh;
-	min-height: fit-content;
+	height: 10vh;
 	font-size: 2.5rem;
-	padding: 0.75%;
 }
-
+nav a {
+	color: var(--whitish);
+}
+nav a:hover {
+    color: var(--peachy);
+    transition-duration: 1s;
+}
 h1 {
 	width: 25%;
 	font-family: 'Courgette', cursive;
 	font-size: 4rem;
 	margin: auto 0;
-	padding-left: 1%;
+	padding-left: 2%;
 	color: var(--pastelgreen);
 }
-
 .links {
 	text-align: center;
 	margin: auto 0;
-	width: 50%;
+    width: 50%;
+    color: var(--whitish);
 }
-
 .links a {
-	color: var(--pastelgreen);
-	padding: 0 2%;
+	color: var(--whitish);
+    padding: 0 5%;
+    font-size: 2.5rem;
 }
-
 .login {
 	width: 25%;
 	text-align: right;
 	margin: auto 0;
-	padding-right: 1%;
+    padding-right: 1%;
+    color: var(--whitish);
+    font-size: 2.5rem;
+}
+.login a {
+    color: var(--pastelgreen);
+    padding:0 3%;
 }
 
-.login a {
-	color: var(--pastelgreen)
-}
 /* #endregion */
 
 
@@ -112,7 +119,7 @@ h1 {
 }
 
 .sample-card {
-	max-width: 50%;
+	min-width: 400px;
 	height: 93%;
 	border-radius: 15px;
 	margin: 1.2% 1%;
@@ -126,8 +133,9 @@ h1 {
 }
 
 .sample-card p, li {
-	padding-left: 2%;
+	box-sizing: border-box;
 	border-bottom: 1px solid blue;
+	padding-left: 2%;
 }
 
 .sample-card .title {
@@ -228,18 +236,28 @@ h2 {
 }
 
 footer {
-	text-align: center;
+    text-align: center;
+    background-color: var(--greyish);
+    height: 5vh;
+    padding: 2%;
+    color: var(--whitish);
+    font-size:2.5rem;
 }
-
 footer a {
-	color: var(--greyish);
+    color: var(--whitish);
+    font-size: 2.5rem;
+    padding:0 1%;
+    transition-duration: 1s;
 }
-
+footer a:hover {
+    color: var(--peachy);
+  }
 small {
 	display: block;
-	font-size: 1rem;
+    font-size: 1.2rem;
+    padding:1% 0;
+    color: var(--pastelgreen);
 }
-
 
 @media (max-width: 500px) {
 	/* #region nav */
