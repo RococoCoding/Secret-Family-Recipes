@@ -19,12 +19,35 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
 	--peachy: #FFD6BA;
 	--whitish: #FAF9F9;
@@ -39,7 +62,6 @@ html {
 }
 body {
 	font-size: 1.3rem;
-	background-color: var(--whitish);
 }
 
 a {
@@ -49,47 +71,52 @@ a {
 
 /* #region header/nav */
 
-
 nav {
 	display: flex;
 	background-color: var(--greyish);
 	height: 10vh;
-	font-size: 2.5rem;
 }
+
 nav a {
 	color: var(--whitish);
 }
+
 nav a:hover {
     color: var(--peachy);
     transition-duration: 1s;
 }
+
 h1 {
-	width: 25%;
+	width: 40%;
 	font-family: 'Courgette', cursive;
-	font-size: 4rem;
+	font-size: 3rem;
 	margin: auto 0;
 	padding-left: 2%;
 	color: var(--pastelgreen);
 }
+
 .links {
 	text-align: center;
 	margin: auto 0;
-    width: 50%;
+    width: 100%;
     color: var(--whitish);
 }
+
 .links a {
 	color: var(--whitish);
     padding: 0 5%;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
+
 .login {
-	width: 25%;
 	text-align: right;
-	margin: auto 0;
-    padding-right: 1%;
     color: var(--whitish);
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: auto 0;
+    width: 40%;
+    padding-right: 2%;
 }
+
 .login a {
     color: var(--pastelgreen);
     padding:0 3%;
@@ -114,6 +141,8 @@ h1 {
 }
 
 .pitch p {
+	margin-top: 3%;
+	line-height: 3.5rem;
 	font-size: 3rem;
 	color: var(--whitish);
 }
@@ -251,12 +280,11 @@ footer {
     height: 5vh;
     padding: 2%;
     color: var(--whitish);
-    font-size:2.5rem;
 }
 
 footer a {
     color: var(--whitish);
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding:0 1%;
     transition-duration: 1s;
 }
@@ -272,6 +300,25 @@ small {
     color: var(--pastelgreen);
 }
 
+@media (max-width: 700px) {
+	h1 {
+		line-height: 4rem;
+		width: 25%;
+	}
+	
+	.links {
+		width: 75%;
+	}
+
+	.links a {
+		padding: 2%;
+	}
+
+	.login {
+		width: max-content;
+	}
+} 
+
 @media (max-width: 500px) {
 	/* #region nav */
 	html {
@@ -283,26 +330,23 @@ small {
 	}
 
 	h1 {
-		padding-right: 1%;
+		width: 25%;
+		padding-left: 1%;
 	}
 
 	.links {
-		width:  70%;
+		width: 75%;
 	}
 
 	.links a {
-		padding: 2%;
-		font-size: 2.2rem;
-		background-color: var(--pastelgreen);
-		color: var(--greyish);
+		font-size: 2rem;
+		/* background-color: var(--pastelgreen); */
+		color: var(--whitish);
 		border-radius: 5px;
 	}
 
 	.login {
-		display: flex;
-		flex-wrap: wrap;
-		width: 20%;
-		padding-left: 1%;
+		width: 25%;
 	}
 
 	nav .login a {
@@ -356,9 +400,20 @@ small {
 		width: 50%;
 		border-radius: 10px;
 	}
-
-}
-
-@media (max-width: 1032px) {
+	/* #endregion */
+	footer {
+        height: 7vh;
+        padding: 5%;
+	}
 	
-}
+    footer a {
+        color: var(--whitish);
+        font-size: 1.5rem;
+        padding: 3% 0;
+	}
+	
+    small {
+        font-size: 1.2rem;
+        padding:3% 0;
+        color: var(--pastelgreen);
+    }
