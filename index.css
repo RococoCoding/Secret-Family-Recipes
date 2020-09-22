@@ -126,6 +126,13 @@ h1 {
 
 
 /* #region index intro */
+h2 {
+	text-align: center;
+	font-size: 4rem;
+	margin-bottom: 3%;;
+	color: var(--greyish);
+}
+
 .intro {
 	display: flex;
 	justify-content: space-between;
@@ -229,10 +236,10 @@ ul, ol {
 	width: 95%;
 }
 
-h2 {
+.h2-faq {
 	text-align: center;
 	font-size: 4rem;
-	margin-top: 2%;
+	margin-top: 3%;
 	color: black;
 }
 
@@ -312,7 +319,8 @@ small {
     color: var(--pastelgreen);
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
 	.links a{
         font-size: 1.5rem;
     }
@@ -337,6 +345,26 @@ small {
 		font-size: 1.7rem;
 	}
 
+	
+	.faq {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.faq div {
+		width: 60%;
+	}
+	.question {
+		line-height: 2.5rem;
+	}
+	.answer {
+		line-height: 2.2rem;
+		padding-bottom: 3%;
+	}
+
+	.faq h3 {
+		margin: -2% -2% 0 -2%;
+	}
 	.signup {
 		width: 45%;
 		padding: 1% 1% 1.5% 1%;
@@ -344,8 +372,8 @@ small {
 
 } 
 
-@media (max-width: 500px) {
-	/* #region nav */
+@media (max-width: 500px) and (orientation: portrait) {
+	/* #region nav mobile */
 	html {
 		font-size: 30%;
 	}
@@ -383,7 +411,7 @@ small {
 	}
 	/* #endregion */
 	
-	/* #region index */
+	/* #region index mobile */
 	.intro {
 		flex-direction: column;
 	}
@@ -429,6 +457,7 @@ small {
 		border-radius: 10px;
 	}
 	/* #endregion */
+
 	footer {
         height: 7vh;
         padding: 5%;
@@ -445,4 +474,56 @@ small {
         padding:3% 0;
         color: var(--pastelgreen);
 	}
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+	/* #region landscape mode nav */
+	nav {
+		height: 15vh;
+	}
+
+	h1 {
+		font-size: 2rem;
+		width: 20%;
+	}
+
+	.links a {
+		font-size: 1.3rem;
+	}
+
+	.login {
+		width: 20%;
+	}
+
+	.login a {
+		font-size: 1.5rem;
+	}
+	/* #endregion */
+	/* #region landscape mode faq */
+	.h2-faq {
+		font-size: 3rem;
+	}
+
+	.faq {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.faq h3 {
+		margin: -1.2% -1.2% 0 -1.2%;
+	}
+
+	.faq div {
+		width: 90%;
+		margin-left: 6%;
+	}
+	/* #endregion */
+
+	/* #region landscape mode footer */
+	.footer {
+		height: 15vh;
+		margin-bottom: 15%;
+		padding-bottom: 15%;
+	}
+	/* #endregion */
 }
