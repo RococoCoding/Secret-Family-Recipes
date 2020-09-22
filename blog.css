@@ -198,7 +198,7 @@ h2{
     color: var(--greyish);
     font-family: 'Kumbh Sans', sans-serif;
     padding: 5% 0;
-    line-height: 5vh;
+    line-height: 5rem;
 }
 button{
     padding: 2% 5%;
@@ -234,4 +234,23 @@ small {
     font-size: 1.2rem;
     padding:1% 0;
     color: var(--pastelgreen);
+}
+
+/* Header Styles - Tablet */
+
+@media only screen and (max-width: 1000px){
+    .links a{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .login a{
+        font-size: 1.5rem;
+    }
+
+    /* Blog-Posts Styles - Tablet */
+    .blog-posts img{
+        width: 50%;
+    }
 }
