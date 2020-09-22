@@ -1,0 +1,346 @@
+/*#region css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+:root {
+	--peachy: #FFD6BA;
+	--whitish: #FAF9F9;
+	--pastelgreen: #BEE3DB;
+	--darkergreen: #89B0AE;
+	--greyish: #555B6E;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Noto Serif', serif;
+}
+body {
+	font-size: 1.3rem;
+	background-color: var(--whitish);
+}
+
+a {
+	color: var(--whitish);
+	text-decoration: none;
+}
+
+/* #region header/nav */
+
+
+nav {
+	display: flex;
+	background-color: var(--greyish);
+	height: 10vh;
+	font-size: 2.5rem;
+}
+nav a {
+	color: var(--whitish);
+}
+nav a:hover {
+    color: var(--peachy);
+    transition-duration: 1s;
+}
+h1 {
+	width: 25%;
+	font-family: 'Courgette', cursive;
+	font-size: 4rem;
+	margin: auto 0;
+	padding-left: 2%;
+	color: var(--pastelgreen);
+}
+.links {
+	text-align: center;
+	margin: auto 0;
+    width: 50%;
+    color: var(--whitish);
+}
+.links a {
+	color: var(--whitish);
+    padding: 0 5%;
+    font-size: 2.5rem;
+}
+.login {
+	width: 25%;
+	text-align: right;
+	margin: auto 0;
+    padding-right: 1%;
+    color: var(--whitish);
+    font-size: 2.5rem;
+}
+.login a {
+    color: var(--pastelgreen);
+    padding:0 3%;
+}
+
+/* #endregion */
+
+
+/* #region index intro */
+.intro {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkergreen);
+	padding: 2%
+}
+
+.pitch {
+	width: 50%;
+	margin: auto;
+	font-size: 4rem;
+	color: var(--peachy);
+}
+
+.pitch p {
+	font-size: 3rem;
+	color: var(--whitish);
+}
+
+.sample-card {
+	width: 400px; /* max content not including padding-left in li item, even with border box*/
+	height: 93%;
+	border-radius: 15px;
+	margin: 1.2% 1%;
+	background-color: var(--whitish);
+	font-family: 'Courgette', cursive;
+	line-height: 2.2vh;
+	box-sizing: border-box;
+}
+
+.sample-card p {
+	font-weight: bold;
+}
+
+.sample-card p, li {
+	/* box-sizing: border-box; not working, hence width static at 400px :(( */ 
+	border-bottom: 1px solid blue;
+	padding-left: 2%;
+}
+
+.sample-card .title {
+	text-align: center;
+	font-size: 2rem;
+	line-height: 3.2vh;
+	border-bottom: 1px solid red;
+}
+
+.last {
+	border: none;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+
+/* #endregion */
+
+
+/* #region index testimonials */
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 70%;
+	margin: 3% auto 0 auto;
+}
+
+.testimonials div {
+	display: flex;
+	margin-bottom: 5%;
+}
+
+.testimonials img {
+	float: left;
+	margin-right: 2%;
+	width: 30%;
+}
+
+.testimonials p {
+	color: var(--greyish);
+	font-size: 2rem;
+	text-align: center;
+	align-self: center;
+}
+
+/* #endregion */
+
+/* #region faq */
+
+.faq {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 95%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 4rem;
+	margin: 1% 0;
+}
+
+.faq div {
+	width: 40%;
+	border: 1px solid var(--pastelgreen);
+	padding: 1%;
+	font-size: 2rem;
+	margin: 2% 0;
+}
+
+.faq h3 {
+	font-size: 3rem;
+	margin-bottom: 3%;
+}
+
+.faq p {
+	margin-bottom: 2%;
+}
+
+.question {
+	margin-top: 4%;
+}
+
+.answer {
+	font-size: 1.6rem;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* #endregion */
+
+.signup {
+	text-align: center;
+	background-color: var(--darkergreen);
+	width: 30%;
+	margin: 0 auto 2% auto;
+	font-size: 4rem;
+	padding: 1%;
+	border-radius: 15px;
+}
+
+.signup a:hover {
+	color: var(--peachy);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--greyish);
+    height: 5vh;
+    padding: 2%;
+    color: var(--whitish);
+    font-size:2.5rem;
+}
+
+footer a {
+    color: var(--whitish);
+    font-size: 2.5rem;
+    padding:0 1%;
+    transition-duration: 1s;
+}
+
+footer a:hover {
+    color: var(--peachy);
+}
+
+small {
+	display: block;
+    font-size: 1.2rem;
+    padding:1% 0;
+    color: var(--pastelgreen);
+}
+
+@media (max-width: 500px) {
+	/* #region nav */
+	html {
+		font-size: 30%;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	h1 {
+		padding-right: 3%;
+	}
+
+	.links {
+		font-size: 2rem;
+		width:  50%;
+	}
+
+	.login {
+		display: flex;
+		flex-wrap: wrap;
+		width: max-content;
+		padding-left: 3%;
+		padding-right: 0;
+	}
+
+	nav .login a {
+		text-align: right;
+	}
+	/* #endregion */
+	
+	/* #region index */
+	.intro {
+		flex-direction: column;
+	}
+
+	.pitch {
+		font-size: 3.5rem;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 3%;
+	}
+
+	.sample-card {
+		max-width: 80%;
+		width: 70%;
+		margin: 3% auto;
+		line-height: 2rem;
+	}
+
+	.sample-card .title {
+		line-height: 2.7rem;
+	}
+
+	.testimonials div {
+		margin-bottom: 8%;
+	}
+
+	.testimonials img {
+		margin-bottom: 2%;
+	}
+
+	.signup {
+		width: 50%;
+		border-radius: 10px;
+	}
+
+}
+
+@media (max-width: 1032px) {
+	
+}
