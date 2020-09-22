@@ -1,3 +1,4 @@
+/*#region css reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 1px black solid; */
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -61,14 +62,15 @@ html {
 	font-family: 'Noto Serif', serif;
 }
 body {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
+}
+a {
+	color: var(--whitish);
+	text-decoration: none;
 }
 
 /* Header Styles - Desktop */
 
-a {
-	text-decoration: none;
-}
 nav {
 	display: flex;
 	background-color: var(--greyish);
@@ -110,6 +112,7 @@ h1 {
 }
 .login a {
     color: var(--pastelgreen);
+    padding:0 3%;
 }
 
 /* Main-Content Styles - Desktop */
@@ -168,17 +171,14 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
 }
-
 .blog-content{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .blog-content p{
     padding-bottom: 3%;
 }
-
 .blog-container1-3{
     display: flex;
     background-color: var(--peachy);
@@ -237,10 +237,11 @@ small {
 }
 
 /* Tablet Styles */
-/* Header Styles - Tablet */
 
 @media only screen and (max-width: 800px){
     
+    /* Header Styles - Tablet */
+
     .links a{
         font-size: 1.5rem;
     }
@@ -295,14 +296,14 @@ small {
     }
     .links a{
         font-size: 1.3rem;
-        padding: 1%;
+        padding: 2%;
     }
     h1{
         font-size: 2rem;
         width: 20%;
     }
     .login a{
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 0;
     }
 
