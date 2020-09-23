@@ -188,7 +188,7 @@ h2{
 .app-features img{
     width: 120px;
 }
-.app-features h3{
+h3{
     font-size: 2.3rem;
     color: var(--greyish);
     font-family: 'Kumbh Sans', sans-serif;
@@ -340,6 +340,18 @@ small {
         font-size: 3rem;
         line-height: 4rem;
     }
+
+    /* Features Styles - Phone - Portrait */
+
+    .features-container img {
+        width: 100px;
+        padding-bottom: 5%;
+    }
+    h3 {
+        padding: 10% 0;
+        font-size: 3.5rem;
+    }
+
 
     /* Footer Styles - Phone - Portrait */
 
