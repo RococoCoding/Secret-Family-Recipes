@@ -166,7 +166,7 @@ h1 {
 }
 h2{
     text-align: center;
-    padding: 2%;
+    padding: 3% 0;
     font-size: 5rem;
     color: var(--greyish);
 }
@@ -275,7 +275,6 @@ small {
         margin: 0;
     }
 
-
     /* Blog-Posts Styles - Tablet */
 
     .blog-posts img{
@@ -297,9 +296,6 @@ small {
     .blog-content h3{
         font-size: 3rem;
         padding: 0 3%;
-    }
-    .blog-content{
-        padding: 1% 5%;
     }
 }
 
