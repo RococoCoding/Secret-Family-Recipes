@@ -218,20 +218,19 @@ h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
-.team-containers{
+.ind-team-containers{
     width:20%;
     color: var(--darkergreen);
     text-align: center;
-    padding: 1% 3%;
+    padding: 1% 2%;
 }
-.team-containers img{
+.ind-team-containers img{
     border-radius: 10px;
     padding-bottom: 5%;
     width: 100%;
 }
-.team-containers p{
+.ind-team-containers p{
     padding: 2% 0;
 }
 
@@ -291,7 +290,6 @@ small {
         padding: 0;
         margin: 0;
     }
-
 }
 
 /* Phone Styles - Portrait */
@@ -356,6 +354,23 @@ small {
     .features-content{
         font-size: 3rem;
         line-height: 3.5rem;
+    }
+
+    /* Meet the Team - Phone - Portrait */
+
+    .ind-team-containers{
+        width:40%;
+        color: var(--darkergreen);
+        text-align: center;
+        padding: 1% 3%;
+    }
+    h4{
+        color: var(--greyish);
+        font-size: 3rem;
+    }
+    .ind-team-containers p{
+        padding: 5% 0;
+        font-size: 2.3rem;
     }
 
     /* Footer Styles - Phone - Portrait */
