@@ -294,6 +294,18 @@ small {
 
 /* Tablet Styles */
 
+@media only screen and (max-width: 1000px) {
+    .links a {
+        padding: 2%;
+    }
+    .login {
+        width: max-content;
+    }
+    h1 {
+        width: max-content;
+    }
+}
+
 @media only screen and (max-width: 800px){
     
     /* Header Styles - Tablet */
