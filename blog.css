@@ -151,6 +151,10 @@ h1 {
     background-color: var(--pastelgreen);
     padding:0.5%;
 }
+.pastelgreen p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
 
 /* Blog-Content Styles - Desktop */
 
@@ -215,6 +219,11 @@ h2{
     color: var(--greyish);
     font-family: 'Kumbh Sans', sans-serif;
     line-height: 5rem;
+    padding-bottom: 3%;
+}
+.blog-posts p{
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 button{
     padding: 2% 5%;
