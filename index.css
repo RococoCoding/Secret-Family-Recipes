@@ -213,7 +213,8 @@ ul, ol {
 
 .bg-img {
 	background-image: url("pexels-ella-olsson-1640777.jpg");
-	background-size: 150%;
+	background-size: 200%;
+	background-position: center;
 }
 
 h2 {
@@ -243,6 +244,31 @@ h2 {
 	align-self: center;
 	line-height: 2.5rem;
 	padding: 2%;
+}
+
+.testimonials .signup {
+	background-color: var(--darkergreen);
+	width: max-content;
+	font-size: 4rem;
+	padding: 2% 1%;
+	border-radius: 15px;
+	padding: 1%;
+}
+
+.testimonials .signup a:hover {
+	animation: open 1s;
+}
+
+@keyframes open {
+	50% {transform: scale(0.25, 1)};
+}
+
+.testimonials .signup a {
+	margin: 0 auto;
+}
+
+.signup a:hover {
+	color: var(--peachy);
 }
 
 /* #endregion */
@@ -312,20 +338,7 @@ h2 {
 
 /* #endregion */
 
-.testimonials .signup {
-	text-align: center;
-	background-color: var(--darkergreen);
-	width: max-content;
-	margin: 0 auto 2% auto;
-	font-size: 4rem;
-	padding: 1%;
-	border-radius: 15px;
-}
-
-.signup a:hover {
-	color: var(--peachy);
-}
-
+/* #region footer */
 footer {
     text-align: center;
     background-color: var(--greyish);
@@ -351,7 +364,20 @@ small {
     padding:1% 0;
     color: var(--pastelgreen);
 }
+/* #endregion */
 
+/* small nav fix for 800-1000px width */
+@media only screen and (max-width: 1000px) {
+	.links a {
+		padding: 2%;
+	}
+	.login {
+		width: max-content;
+	}
+	h1 {
+		width: max-content;
+	}
+}
 
 @media only screen and (max-width: 800px) and (orientation: portrait) {
 	/* #region nav tablet */
@@ -364,7 +390,7 @@ small {
     .login a{
         font-size: 1.5rem;
     }
-	/* #end region */
+	/* #endregion */
 
 	/* #region index tablet */
 	.sample-card li, p{
@@ -538,7 +564,8 @@ small {
 		padding: 2%;
 	}
 	/* #endregion */
-	/* #region faq */
+	
+	/* #region faq mobile */
 	.faq div {
 		width: 100%;
 		margin-left: 2%;
@@ -553,6 +580,8 @@ small {
 		line-height: 3rem;
 	}
 	/* #endregion */
+
+	/* #region footer mobile */
 	footer {
         height: 15vh;
         padding: 3%;
@@ -571,11 +600,11 @@ small {
         padding-top: 5%;
         color: var(--pastelgreen);
 	}
-
+	/* #endregion */
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
-	/* #region landscape mode nav */
+	/* #region nav mobile landscape */
 	nav {
 		height: 15vh;
 	}
@@ -599,7 +628,7 @@ small {
 
 	/* #endregion */
 	
-	/* #region landscape index */
+	/* #region index mobile landscape*/
 	.pitch {
 		font-size: 2.5rem;
 	}
@@ -642,7 +671,7 @@ small {
 	
 	/* #endregion */
 
-	/* #region landscape mode faq */
+	/* #region faq mobile landscape*/
 	.h2-faq {
 		font-size: 3rem;
 		width: 82%;
@@ -658,6 +687,8 @@ small {
 		margin-left: 6%;
 	}
 	/* #endregion */
+	
+	/* #region footer landscape */
 	footer {
 		height: 10vh;
 	}
@@ -669,4 +700,5 @@ small {
 	small {
 		font-size: .75rem;
 	}
+	/* #endregion */
 }
