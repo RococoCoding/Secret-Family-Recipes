@@ -205,6 +205,7 @@ ul, ol {
 
 .bg-img {
 	background-image: url("pexels-ella-olsson-1640777.jpg");
+	background-size: 150%;
 }
 
 h2 {
@@ -243,6 +244,11 @@ h2 {
 	background-color: var(--pastelgreen);
 }
 
+.main-faq {
+	background-image: url("pexels-aleksandar-pasaric-1415734.jpg");
+	background-size: 150%;
+	padding-top: 2%;
+}
 
 .faq {
 	display: flex;
@@ -252,31 +258,35 @@ h2 {
 }
 
 .h2-faq {
-	text-align: center;
 	font-size: 4rem;
-	margin-top: 3%;
+	margin: 0 auto;
 	color: black;
+	width: max-content;
+	background-color: rgba(190, 227, 219, 1);
+	border-radius: 5px;
+	border: 1px solid var(--darkergreen);
 }
 
 .faq div {
 	width: 35%;
-	border: 1px solid var(--greyish);
-	padding: 1%;
 	font-size: 2rem;
 	margin: 3% 0;
 	background-color: var(--pastelgreen);
+	border-radius: 5px;
 }
 
 .faq h3 {
 	font-size: 3rem;
-	margin: -3.4% -3% 3% -3%;
+	width: 100%;
+	padding: 2% 0;
 	color: var(--peachy);
 	background-color: var(--greyish);
-	padding: 2%;
 	text-align: center;
+	border-radius: 5px 5px 0px 0px;
 }
 
 .faq p {
+	padding: 0 5%;
 	margin-bottom: 2%;
 }
 
@@ -411,39 +421,43 @@ small {
 @media only screen and (max-width: 500px) and (orientation: portrait) {
 	/* #region nav mobile */
 	html {
-		font-size: 30%;
-	}
-
-	nav {
-		padding: 0;
-	}
-
-	h1 {
-		font-size: 3rem;
-		width: 25%;
-		padding-left: 1%;
-	}
-
-	.links {
-		width: 75%;
-	}
-
-	.links a {
-		font-size: 2rem;
-		/* background-color: var(--pastelgreen); */
-		color: var(--whitish);
-		padding: 2%;
-	}
-
-	.login {
-		width: 25%;
-	}
-
-	.login a {
-		line-height: 4rem;
-		text-align: right;
-		font-size: 2rem;
-	}
+        font-size: 30%;
+    }
+    nav {
+        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+    }
+    h1 {
+        font-size: 5rem;
+        padding: 3% 0;
+        text-align: center;
+        width: 80%;
+    }
+    .links {
+        width: 90%;
+    }
+    .links a {
+        color: var(--whitish);
+        font-size: 2.8rem;
+        padding: 3%;
+        height: 100%;
+        width: 90%;
+        line-height: 6rem;
+    }
+    .login {
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        padding: 3% 0;
+    }
+    .login a {
+        line-height: 4rem;
+        font-size: 3.5rem;
+        padding: 0 3%;
+    }
 	/* #endregion */
 	
 	/* #region index mobile */
@@ -498,23 +512,40 @@ small {
 		padding: 2%;
 	}
 	/* #endregion */
-
-	footer {
-        height: 7vh;
-        padding: 5%;
+	/* #region faq */
+	.faq div {
+		width: 100%;
+		margin-left: 2%;
 	}
-	
+	.faq h3 {
+		margin: 0;
+		font-size: 3.5rem;
+	}
+
+	.faq p {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	/* #endregion */
+	footer {
+        height: 15vh;
+        padding: 3%;
+    }
     footer a {
         color: var(--whitish);
-        font-size: 1.5rem;
-        padding: 3% 0;
+        font-size: 2.8rem;
+        padding: 3%;
+        height: 100%;
+        max-width: 50%;
+		line-height: 5rem;
+		white-space: nowrap;
 	}
-	
     small {
-        font-size: 1.2rem;
-        padding:3% 0;
+        font-size: 2.5rem;
+        padding-top: 5%;
         color: var(--pastelgreen);
 	}
+
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
@@ -588,15 +619,12 @@ small {
 	/* #region landscape mode faq */
 	.h2-faq {
 		font-size: 3rem;
+		width: 82%;
 	}
 
 	.faq {
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.faq h3 {
-		margin: -1.2% -1.2% 0 -1.2%;
 	}
 
 	.faq div {
