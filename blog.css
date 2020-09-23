@@ -410,4 +410,10 @@ small {
     footer {
         height: 10vh;
     }
+    footer a {
+        font-size: 1.5rem;
+    }
+    small {
+        font-size: .75rem;
+    }
 }
