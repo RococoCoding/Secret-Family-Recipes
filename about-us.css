@@ -437,9 +437,7 @@ small {
 
     /* Footer Styles - Phone - Landscape */
 
-    .footer {
-		height: 15vh;
-		margin-bottom: 15%;
-		padding-bottom: 15%;
-	}
+    footer {
+        height: 10vh;
+    }
 }

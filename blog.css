@@ -404,4 +404,10 @@ small {
     .login a {
         font-size: 1.5rem;
     }
+
+    /* Footer Styles - Phone - Landscape */
+
+    footer {
+        height: 10vh;
+    }
 }
