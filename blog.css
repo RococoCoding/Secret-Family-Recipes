@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -156,11 +156,19 @@ h1 {
     line-height: 2.5rem;
 }
 
-/* Blog-Content Styles - Desktop */
+/* Intro-Content Styles - Desktop */
 
-.intro-content{
+.intro-content {
+    background-color: var(--pastelgreen);
+    padding:0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-content p{
     text-align: center;
-    padding: 4%;
+    padding:4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,6 +176,7 @@ h1 {
     font-size: 1.5rem;
     line-height: 2rem;
     font-family: 'Kumbh Sans', sans-serif;
+    font-style: italic;
 }
 h2{
     text-align: center;
@@ -239,6 +248,10 @@ h2{
 .blog-posts p{
     font-size: 2rem;
     line-height: 2.5rem;
+}
+.blog-posts ul{
+    font-family: 'Noto Serif', serif;
+    text-align: left;
 }
 button{
     padding: 2% 5%;
@@ -335,64 +348,133 @@ small {
 	html {
 		font-size: 30%;
 	}
-
 	nav {
-		padding: 0;
+        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
 	}
-
 	h1 {
-		font-size: 3rem;
-		width: 25%;
-		padding-left: 1%;
+		font-size: 5rem;
+        padding: 3% 0;
+        text-align: center;
+        width: 80%;
 	}
-
 	.links {
-		width: 75%;
+		width: 90%;
 	}
-
 	.links a {
-		font-size: 2rem;
-		/* background-color: var(--pastelgreen); */
-		color: var(--whitish);
-		border-radius: 5px;
-		padding: 2%;
+        color: var(--whitish);
+        font-size: 2.8rem;
+        padding: 3%;
+        height: 100%;
+        width: 90%;
+        line-height: 6rem;
 	}
-
 	.login {
-		width: 25%;
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        padding: 3% 0;
 	}
-
 	.login a {
 		line-height: 4rem;
-		text-align: right;
-		font-size: 2rem;
+        font-size: 3.5rem;
+        padding: 0 3%;
 	}
 
-    /* Main-Content Styles - Phone - Portrait */
+    /* Intro-Content Styles - Phone - Portrait */
 
-
-
-    /* About-Content Styles - Phone - Portrait */
-
-    .blog-content{
+    .intro-content{
+        padding: 3% 0;
+    }
+    .intro-content p{
         font-size: 3rem;
         line-height: 4rem;
+        width: 80%;
+    }
+
+    /* Blog-Posts Styles - Phone - Portrait */
+
+    h2 {
+        padding: 5% 0;
+    }
+    .blog-posts{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .blog-container1-3{
+        background-color: var(--peachy);
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+    .blog-container2-4{
+        background-color: var(--pastelgreen);
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+    .blog-posts img{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 20px;
+    }
+    .blog-posts h3{
+        font-size: 4.5rem;
+        line-height: 6rem;
+        color: var(--greyish);
+        padding: 6% 0;
+        width: 90%;
+    }
+    .blog-posts p{
+        font-size: 3.3rem;
+        line-height: 4rem;
+        padding-bottom: 10%;
+    }
+    .blog-posts ul{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        width: 80%;
+        padding-bottom: 5%;
+    }
+    button{
+        border-radius: 10px;
+        font-size: 3.5rem;
+        margin: 10% 0;   
     }
     
     /* Footer Styles - Phone - Portrait */
 
     footer {
-        height: 7vh;
-        padding: 5%;
+        height: 15vh;
+        padding: 3%;
     }
     footer a {
         color: var(--whitish);
-        font-size: 1.5rem;
-        padding: 3% 0;
+        font-size: 2.8rem;
+        padding: 3%;
+        height: 100%;
+        max-width: 50%;
+        line-height: 5rem;
+        white-space: nowrap;
     }
     small {
-        font-size: 1.2rem;
-        padding:3% 0;
+        font-size: 2.5rem;
+        padding-top: 5%;
         color: var(--pastelgreen);
     }
 }
