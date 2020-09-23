@@ -199,13 +199,28 @@ ul, ol {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 70%;
-	margin: 3% auto 0 auto;
+	background-color:rgba(255, 255, 255, 0.2);
+	align-items: center;
+}
+
+.bg-img {
+	background-image: url("pexels-ella-olsson-1640777.jpg");
+	background-size: 150%;
+}
+
+h2 {
+	color: var(--greyish);
+	margin-top: 3%;
+	padding: 2%;
+	background-color: rgba(255, 214, 186, 0.9);
+	border-radius: 20px;
 }
 
 .testimonials div {
+	width: 70%;
 	display: flex;
 	margin-bottom: 5%;
+	background-color: rgba(255, 214, 186, 0.9);
 }
 
 .testimonials img {
@@ -219,6 +234,7 @@ ul, ol {
 	font-size: 2rem;
 	text-align: center;
 	align-self: center;
+	line-height: 2.5rem;
 }
 
 /* #endregion */
@@ -228,6 +244,11 @@ ul, ol {
 	background-color: var(--pastelgreen);
 }
 
+.main-faq {
+	background-image: url("pexels-aleksandar-pasaric-1415734.jpg");
+	background-size: 150%;
+	padding-top: 2%;
+}
 
 .faq {
 	display: flex;
@@ -237,31 +258,35 @@ ul, ol {
 }
 
 .h2-faq {
-	text-align: center;
 	font-size: 4rem;
-	margin-top: 3%;
+	margin: 0 auto;
 	color: black;
+	width: max-content;
+	background-color: rgba(190, 227, 219, 1);
+	border-radius: 5px;
+	border: 1px solid var(--darkergreen);
 }
 
 .faq div {
 	width: 35%;
-	border: 1px solid var(--greyish);
-	padding: 1%;
 	font-size: 2rem;
 	margin: 3% 0;
 	background-color: var(--pastelgreen);
+	border-radius: 5px;
 }
 
 .faq h3 {
 	font-size: 3rem;
-	margin: -3.4% -3% 3% -3%;
+	width: 100%;
+	padding: 2% 0;
 	color: var(--peachy);
 	background-color: var(--greyish);
-	padding: 2%;
 	text-align: center;
+	border-radius: 5px 5px 0px 0px;
 }
 
 .faq p {
+	padding: 0 5%;
 	margin-bottom: 2%;
 }
 
@@ -279,10 +304,10 @@ ul, ol {
 
 /* #endregion */
 
-.signup {
+.testimonials .signup {
 	text-align: center;
 	background-color: var(--darkergreen);
-	width: 30%;
+	width: max-content;
 	margin: 0 auto 2% auto;
 	font-size: 4rem;
 	padding: 1%;
@@ -298,7 +323,7 @@ footer {
     background-color: var(--greyish);
     height: 5vh;
     padding: 2%;
-    color: var(--whitish);
+	color: var(--whitish);
 }
 
 footer a {
@@ -321,6 +346,7 @@ small {
 
 
 @media only screen and (max-width: 800px) and (orientation: portrait) {
+	/* #region nav tablet */
 	.links a{
         font-size: 1.5rem;
     }
@@ -330,22 +356,45 @@ small {
     .login a{
         font-size: 1.5rem;
     }
+	/* #end region */
 
+	/* #region index tablet */
 	.sample-card li, p{
 		line-height: 1.75rem;
 	}
 
-	h2 {
-		font-size: 3.5rem;
-		margin-bottom: 3%;
+	.pitch {
+		font-size: 3rem;
+		line-height: 4rem;
 	}
 
+	.pitch p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		margin-bottom: 3%;
+	}
+	.bg-img {
+		background-image: url("pexels-ready-made-3850888.jpg");
+		background-size: 100%;
+	}
 	.testimonials p {
 		line-height: 2rem;
 		font-size: 1.7rem;
+		padding: 2%;
+	}	
+	
+	.signup {
+		width: 45%;
+		padding: 1% 1% 1.5% 1%;
 	}
 
+	/* #endregion */
 	
+	/* #region faq tablet */
 	.faq {
 		flex-direction: column;
 		align-items: center;
@@ -365,53 +414,54 @@ small {
 	.faq h3 {
 		margin: -2% -2% 0 -2%;
 	}
-	.signup {
-		width: 45%;
-		padding: 1% 1% 1.5% 1%;
-	}
+	/* #endregion  */
 
 } 
 
-@media (max-width: 500px) and (orientation: portrait) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
 	/* #region nav mobile */
 	html {
-		font-size: 30%;
-	}
-
-	nav {
-		padding: 0;
-	}
-
-	h1 {
-		font-size: 3rem;
-		width: 25%;
-		padding-left: 1%;
-	}
-
-	.links {
-		width: 75%;
-	}
-
-	.links a {
-		font-size: 2rem;
-		/* background-color: var(--pastelgreen); */
-		color: var(--whitish);
-		border-radius: 5px;
-		padding: 2%;
-	}
-
-	.login {
-		width: 25%;
-	}
-
-	.login a {
-		line-height: 4rem;
-		text-align: right;
-		font-size: 2rem;
-	}
+        font-size: 30%;
+    }
+    nav {
+        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+    }
+    h1 {
+        font-size: 5rem;
+        padding: 3% 0;
+        text-align: center;
+        width: 80%;
+    }
+    .links {
+        width: 90%;
+    }
+    .links a {
+        color: var(--whitish);
+        font-size: 2.8rem;
+        padding: 3%;
+        height: 100%;
+        width: 90%;
+        line-height: 6rem;
+    }
+    .login {
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        padding: 3% 0;
+    }
+    .login a {
+        line-height: 4rem;
+        font-size: 3.5rem;
+        padding: 0 3%;
+    }
 	/* #endregion */
 	
 	/* #region index mobile */
+
 	.intro {
 		flex-direction: column;
 	}
@@ -424,10 +474,10 @@ small {
 	}
 
 	.sample-card {
-		max-width: 80%;
-		width: 70%;
+		width: 60%;
 		margin: 3% auto;
 		line-height: 2rem;
+		border-radius: 3px;
 	}
 
 	.sample-card .title {
@@ -435,8 +485,13 @@ small {
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 3.5rem;
 		margin-bottom: 4%;
+	}
+
+	.bg-img {
+		background-image: url("pexels-ready-made-3850888.jpg");
+		background-size: 100%;
 	}
 
 	.testimonials div {
@@ -445,35 +500,52 @@ small {
 	}
 	.testimonials p{
 		font-size: 1.5rem;
+		padding: 2%;
 	}
 
 	.testimonials img {
-		margin-bottom: 2%;
 		object-fit: cover;
 	}
 
-	.signup {
-		width: 50%;
-		border-radius: 10px;
+	.testimonials .signup {
+		border-radius: 7px;
+		padding: 2%;
 	}
 	/* #endregion */
-
-	footer {
-        height: 7vh;
-        padding: 5%;
+	/* #region faq */
+	.faq div {
+		width: 100%;
+		margin-left: 2%;
 	}
-	
+	.faq h3 {
+		margin: 0;
+		font-size: 3.5rem;
+	}
+
+	.faq p {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	/* #endregion */
+	footer {
+        height: 15vh;
+        padding: 3%;
+    }
     footer a {
         color: var(--whitish);
-        font-size: 1.5rem;
-        padding: 3% 0;
+        font-size: 2.8rem;
+        padding: 3%;
+        height: 100%;
+        max-width: 50%;
+		line-height: 5rem;
+		white-space: nowrap;
 	}
-	
     small {
-        font-size: 1.2rem;
-        padding:3% 0;
+        font-size: 2.5rem;
+        padding-top: 5%;
         color: var(--pastelgreen);
 	}
+
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
@@ -498,10 +570,56 @@ small {
 	.login a {
 		font-size: 1.5rem;
 	}
+
 	/* #endregion */
+	
+	/* #region landscape index */
+	.pitch {
+		font-size: 2.5rem;
+	}
+
+	.pitch p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.sample-card {
+		margin: 2% auto;
+		width: 40%;
+		font-size: 1rem;
+		line-height: 1rem;
+		border-radius: 5px;
+	}
+	.sample-card .title {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	.testimonials div {
+		width: 90%;
+	}
+
+	.testimonials p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		padding: 2%;
+	}
+
+	.testimonials .signup {
+		font-size: 3rem;
+		padding: 2%;
+	}
+	
+	/* #endregion */
+
 	/* #region landscape mode faq */
 	.h2-faq {
 		font-size: 3rem;
+		width: 82%;
 	}
 
 	.faq {
@@ -509,21 +627,20 @@ small {
 		align-items: center;
 	}
 
-	.faq h3 {
-		margin: -1.2% -1.2% 0 -1.2%;
-	}
-
 	.faq div {
 		width: 90%;
 		margin-left: 6%;
 	}
 	/* #endregion */
-
-	/* #region landscape mode footer */
-	.footer {
-		height: 15vh;
-		margin-bottom: 15%;
-		padding-bottom: 15%;
+	footer {
+		height: 10vh;
 	}
-	/* #endregion */
+
+	footer a {
+		font-size: 1.5rem;
+	}
+
+	small {
+		font-size: .75rem;
+	}
 }
