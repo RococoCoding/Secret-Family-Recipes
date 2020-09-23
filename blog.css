@@ -140,6 +140,7 @@ h1 {
     top: 50%;
     left: 50%;
     line-height: 8rem;
+    width: 80%;
 }
 .peachy{
     background-color: var(--peachy);
@@ -202,7 +203,9 @@ h2{
     background-color: var(--pastelgreen);
 }
 .blog-posts img{
-    width: 100%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 3%;
     border-radius: 100px;
     display: flex;

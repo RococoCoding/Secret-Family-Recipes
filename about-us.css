@@ -140,6 +140,7 @@ h1 {
     top: 50%;
     left: 50%;
     line-height: 8rem;
+    width: 80%;
 }
 .peachy{
     background-color: var(--peachy);
