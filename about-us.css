@@ -124,6 +124,11 @@ h1 {
 
 /* Main Content Styles - Desktop */
 
+.peachy{
+    background-color: var(--peachy);
+    padding:0.5;
+    height:2vh;
+}
 .main-content img {
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
@@ -142,12 +147,10 @@ h1 {
     line-height: 8rem;
     width: 80%;
 }
-.peachy{
-    background-color: var(--peachy);
-    padding:0.5;
-    height:2vh;
-}
-.pastelgreen {
+
+/* About-Content Styles - Desktop */
+
+.about-content {
     background-color: var(--pastelgreen);
     padding:0.5%;
     display: flex;
@@ -155,24 +158,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.pastelgreen p{
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
-.pastelgreen button{
-    background-color: var(--greyish);
-    color: var(--whitish);
-    text-align: center;
-    border-radius: 10px;
-    padding: 1% 3%;
-    font-size: 2rem;
-    width: 15%;
-    margin-bottom: 4%;
-}
-
-/* About-Content Styles - Desktop */
-
-.about-content{
+.about-content p{
     text-align: center;
     padding:4%;
     display: flex;
@@ -183,19 +169,33 @@ h1 {
     line-height: 2rem;
     font-family: 'Kumbh Sans', sans-serif;
 }
+.about-content button{
+    background-color: var(--greyish);
+    color: var(--whitish);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1% 3%;
+    font-size: 2rem;
+    width: 15%;
+    margin-bottom: 4%;
+}
+
+/* App-Features Styles - Desktop */
+
 h2{
     text-align: center;
     padding: 3% 0;
     font-size: 4rem;
     color: var(--greyish);
 }
-
-/* App-Features Styles - Desktop */
-
 .app-features{
     display: flex;
     background-color: var(--peachy);
     padding: 3%;
+    width: 80%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .features-container{
     display: flex;
@@ -206,8 +206,10 @@ h2{
     height: 20%;
     padding: 2%;
 }
-.app-features img{
+.features-container img{
     width: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h3{
     font-size: 2.3rem;
@@ -215,10 +217,10 @@ h3{
     font-family: 'Kumbh Sans', sans-serif;
     padding: 5% 0;
 }
-.features-content{
+.features-container p{
     padding: 0 5%;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
     color: var(--darkergreen);
     font-family: 'Kumbh Sans', sans-serif;
@@ -332,21 +334,17 @@ small {
 	html {
 		font-size: 30%;
 	}
-
 	nav {
 		padding: 0;
 	}
-
 	h1 {
 		font-size: 3rem;
 		width: 25%;
 		padding-left: 1%;
 	}
-
 	.links {
 		width: 75%;
 	}
-
 	.links a {
 		font-size: 2rem;
 		/* background-color: var(--pastelgreen); */
@@ -354,11 +352,9 @@ small {
 		border-radius: 5px;
 		padding: 2%;
 	}
-
 	.login {
 		width: 25%;
 	}
-
 	.login a {
 		line-height: 4rem;
 		text-align: right;
@@ -368,19 +364,49 @@ small {
     /* About-Content Styles - Phone - Portrait */
 
     .about-content{
+        padding: 3% 0;
+    }
+    .about-content p{
         font-size: 3rem;
         line-height: 4rem;
+        width: 80%;
+    }
+    .about-content button{
+        padding: 2% 3%;
+        width: 30%;
+        font-size: 3rem;
     }
 
     /* Features Styles - Phone - Portrait */
 
+    h2 {
+        padding: 5% 0;
+    }
+    .app-features {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .features-container{
+        padding: 0;
+    }
     .features-container img {
-        width: 100px;
-        padding-bottom: 5%;
+        width: 70px;
+        background-color: var(--whitish);
+        padding: 5%;
+        border-radius: 10px;
+        margin-top: 5%;
     }
     h3 {
-        padding: 10% 0;
+        padding-top: 6%;
+        padding-bottom: 3%;
         font-size: 3.5rem;
+    }
+    .features-container p{
+        padding-bottom: 5%;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 70%;
     }
     .features-content{
         font-size: 3rem;
