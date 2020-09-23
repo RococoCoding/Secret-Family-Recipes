@@ -213,6 +213,7 @@ hr{
 
 h4{
     color: var(--greyish);
+    font-size: 2rem;
 }
 .team-container{
     margin: auto;
@@ -234,6 +235,7 @@ h4{
 }
 .ind-team-containers p{
     padding: 2% 0;
+    font-size: 1.5rem;
 }
 
 /* Footer Styles - Desktop */
