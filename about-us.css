@@ -167,7 +167,7 @@ h1 {
 h2{
     text-align: center;
     padding: 3% 0;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--greyish);
 }
 
@@ -175,6 +175,8 @@ h2{
 
 .app-features{
     display: flex;
+    background-color: var(--peachy);
+    padding: 3%;
 }
 .features-container{
     display: flex;
@@ -351,7 +353,10 @@ small {
         padding: 10% 0;
         font-size: 3.5rem;
     }
-
+    .features-content{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
 
     /* Footer Styles - Phone - Portrait */
 
