@@ -153,9 +153,9 @@ h1 {
 
 /* Blog-Content Styles - Desktop */
 
-.blog-content{
+.intro-content{
     text-align: center;
-    padding:4%;
+    padding: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,22 +180,29 @@ h2{
 }
 .blog-content{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: var(--greyish);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 .blog-content p{
     padding-bottom: 3%;
 }
 .blog-container1-3{
-    display: flex;
     background-color: var(--peachy);
 }
 .blog-container2-4{
-    display: flex;
     background-color: var(--pastelgreen);
 }
 .blog-posts img{
-    width: 35%;
+    width: 100%;
     padding: 3%;
     border-radius: 100px;
     display: flex;
@@ -204,7 +211,6 @@ h2{
     font-size: 4rem;
     color: var(--greyish);
     font-family: 'Kumbh Sans', sans-serif;
-    padding: 5% 0;
     line-height: 5rem;
 }
 button{
@@ -262,17 +268,16 @@ small {
         font-size: 1.5rem;
     }
 
-    /* Main-Content Styles - Tablet */
+    /* Main-Content Tablet Styles */
 
     .main-content {
         position: relative;
         margin: 0;
         padding: 0;
     }
-    .main-content p{
-        line-height: 7rem;
-        padding: 0;
-        margin: 0;
+    .main-content p {
+        line-height: 6rem;
+        width: 70%;
     }
 
     /* Blog-Posts Styles - Tablet */
@@ -281,21 +286,16 @@ small {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        max-width: 100%;
-        height: 100%;
         border-radius: 40px;
     }
     .blog-container1-3{
-        display: block;
         padding: 2% 0;
     }
     .blog-container2-4{
-        display: block;
         padding: 2% 0;
     }
     .blog-content h3{
         font-size: 3rem;
-        padding: 0 3%;
     }
 }
 

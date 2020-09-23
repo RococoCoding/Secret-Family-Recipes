@@ -218,6 +218,7 @@ h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 3%;
 }
 .ind-team-containers{
     width:20%;
@@ -268,7 +269,7 @@ small {
 
     /* Header Styles - Tablet */
 
-    .links a{
+    /* .links a{
         font-size: 1.5rem;
     }
     h1{
@@ -276,7 +277,7 @@ small {
     }
     .login a{
         font-size: 1.5rem;
-    }
+    } */
 
     /* Main-Content Tablet Styles */
 
@@ -285,10 +286,9 @@ small {
         margin: 0;
         padding: 0;
     }
-    .main-content p{
-        line-height: 7rem;
-        padding: 0;
-        margin: 0;
+    .main-content p {
+        line-height: 6rem;
+        width: 80%;
     }
 }
 
@@ -414,4 +414,11 @@ small {
         font-size: 1.5rem;
     }
 
+    /* Footer Styles - Phone - Landscape */
+
+    .footer {
+		height: 15vh;
+		margin-bottom: 15%;
+		padding-bottom: 15%;
+	}
 }
