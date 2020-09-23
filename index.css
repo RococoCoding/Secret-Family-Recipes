@@ -199,13 +199,27 @@ ul, ol {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 70%;
-	margin: 3% auto 0 auto;
+	background-color:rgba(255, 255, 255, 0.2);
+	align-items: center;
+}
+
+.bg-img {
+	background-image: url("pexels-ella-olsson-1640777.jpg");
+}
+
+h2 {
+	color: var(--greyish);
+	margin-top: 3%;
+	padding: 2%;
+	background-color: rgba(255, 214, 186, 0.9);
+	border-radius: 20px;
 }
 
 .testimonials div {
+	width: 70%;
 	display: flex;
 	margin-bottom: 5%;
+	background-color: rgba(255, 214, 186, 0.9);
 }
 
 .testimonials img {
@@ -219,6 +233,7 @@ ul, ol {
 	font-size: 2rem;
 	text-align: center;
 	align-self: center;
+	line-height: 2.5rem;
 }
 
 /* #endregion */
@@ -279,10 +294,10 @@ ul, ol {
 
 /* #endregion */
 
-.signup {
+.testimonials .signup {
 	text-align: center;
 	background-color: var(--darkergreen);
-	width: 30%;
+	width: max-content;
 	margin: 0 auto 2% auto;
 	font-size: 4rem;
 	padding: 1%;
@@ -298,7 +313,7 @@ footer {
     background-color: var(--greyish);
     height: 5vh;
     padding: 2%;
-    color: var(--whitish);
+	color: var(--whitish);
 }
 
 footer a {
@@ -321,6 +336,7 @@ small {
 
 
 @media only screen and (max-width: 800px) and (orientation: portrait) {
+	/* #region nav tablet */
 	.links a{
         font-size: 1.5rem;
     }
@@ -330,22 +346,45 @@ small {
     .login a{
         font-size: 1.5rem;
     }
+	/* #end region */
 
+	/* #region index tablet */
 	.sample-card li, p{
 		line-height: 1.75rem;
 	}
 
-	h2 {
-		font-size: 3.5rem;
-		margin-bottom: 3%;
+	.pitch {
+		font-size: 3rem;
+		line-height: 4rem;
 	}
 
+	.pitch p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		margin-bottom: 3%;
+	}
+	.bg-img {
+		background-image: url("pexels-ready-made-3850888.jpg");
+		background-size: 100%;
+	}
 	.testimonials p {
 		line-height: 2rem;
 		font-size: 1.7rem;
+		padding: 2%;
+	}	
+	
+	.signup {
+		width: 45%;
+		padding: 1% 1% 1.5% 1%;
 	}
 
+	/* #endregion */
 	
+	/* #region faq tablet */
 	.faq {
 		flex-direction: column;
 		align-items: center;
@@ -365,14 +404,11 @@ small {
 	.faq h3 {
 		margin: -2% -2% 0 -2%;
 	}
-	.signup {
-		width: 45%;
-		padding: 1% 1% 1.5% 1%;
-	}
+	/* #endregion  */
 
 } 
 
-@media (max-width: 500px) and (orientation: portrait) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
 	/* #region nav mobile */
 	html {
 		font-size: 30%;
@@ -396,7 +432,6 @@ small {
 		font-size: 2rem;
 		/* background-color: var(--pastelgreen); */
 		color: var(--whitish);
-		border-radius: 5px;
 		padding: 2%;
 	}
 
@@ -412,6 +447,7 @@ small {
 	/* #endregion */
 	
 	/* #region index mobile */
+
 	.intro {
 		flex-direction: column;
 	}
@@ -424,10 +460,10 @@ small {
 	}
 
 	.sample-card {
-		max-width: 80%;
-		width: 70%;
+		width: 60%;
 		margin: 3% auto;
 		line-height: 2rem;
+		border-radius: 3px;
 	}
 
 	.sample-card .title {
@@ -435,8 +471,13 @@ small {
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 3.5rem;
 		margin-bottom: 4%;
+	}
+
+	.bg-img {
+		background-image: url("pexels-ready-made-3850888.jpg");
+		background-size: 100%;
 	}
 
 	.testimonials div {
@@ -445,16 +486,16 @@ small {
 	}
 	.testimonials p{
 		font-size: 1.5rem;
+		padding: 2%;
 	}
 
 	.testimonials img {
-		margin-bottom: 2%;
 		object-fit: cover;
 	}
 
-	.signup {
-		width: 50%;
-		border-radius: 10px;
+	.testimonials .signup {
+		border-radius: 7px;
+		padding: 2%;
 	}
 	/* #endregion */
 
@@ -498,7 +539,52 @@ small {
 	.login a {
 		font-size: 1.5rem;
 	}
+
 	/* #endregion */
+	
+	/* #region landscape index */
+	.pitch {
+		font-size: 2.5rem;
+	}
+
+	.pitch p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.sample-card {
+		margin: 2% auto;
+		width: 40%;
+		font-size: 1rem;
+		line-height: 1rem;
+		border-radius: 5px;
+	}
+	.sample-card .title {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	.testimonials div {
+		width: 90%;
+	}
+
+	.testimonials p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		padding: 2%;
+	}
+
+	.testimonials .signup {
+		font-size: 3rem;
+		padding: 2%;
+	}
+	
+	/* #endregion */
+
 	/* #region landscape mode faq */
 	.h2-faq {
 		font-size: 3rem;
@@ -518,12 +604,15 @@ small {
 		margin-left: 6%;
 	}
 	/* #endregion */
-
-	/* #region landscape mode footer */
-	.footer {
-		height: 15vh;
-		margin-bottom: 15%;
-		padding-bottom: 15%;
+	footer {
+		height: 10vh;
 	}
-	/* #endregion */
+
+	footer a {
+		font-size: 1.5rem;
+	}
+
+	small {
+		font-size: .75rem;
+	}
 }
