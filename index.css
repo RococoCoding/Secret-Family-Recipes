@@ -467,26 +467,43 @@ small {
 	}
 
 	.pitch {
-		font-size: 3.5rem;
+		font-size: 5rem;
+		line-height: 6rem;
 		width: 100%;
 		text-align: center;
 		margin-bottom: 3%;
 	}
 
+	.pitch p {
+		font-size: 3.5rem;
+		line-height: 5rem;
+	}
+
 	.sample-card {
-		width: 60%;
+		width: 90%;
 		margin: 3% auto;
 		line-height: 2rem;
 		border-radius: 3px;
 	}
 
 	.sample-card .title {
-		line-height: 2.7rem;
+		line-height: 3.5rem;
+		font-size: 3rem;
+	}
+
+	.sample-card p, li {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	.sample-card li {
+		padding: 1% 2%;
 	}
 
 	h2 {
-		font-size: 3.5rem;
+		font-size: 5rem;
 		margin-bottom: 4%;
+		border-radius: 0px;
 	}
 
 	.bg-img {
@@ -496,10 +513,11 @@ small {
 
 	.testimonials div {
 		margin-bottom: 8%;
-		
+		width: 95%;
 	}
 	.testimonials p{
-		font-size: 1.5rem;
+		font-size: 3rem;
+		line-height: 3rem;
 		padding: 2%;
 	}
 
