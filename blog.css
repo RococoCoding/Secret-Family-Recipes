@@ -454,7 +454,9 @@ small {
     button{
         border-radius: 10px;
         font-size: 3.5rem;
-        margin: 10% 0;   
+        margin: 10% 0;
+        padding: 5% 7%;
+        width: 60%;   
     }
     
     /* Footer Styles - Phone - Portrait */
