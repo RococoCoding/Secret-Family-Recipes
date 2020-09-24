@@ -117,7 +117,7 @@ h1 {
 
 /* Main Content Styles - Desktop */
 
-.peachy{
+.peachy {
     background-color: var(--peachy);
     padding:0.5;
     height:2vh;
@@ -158,19 +158,19 @@ h1 {
     align-items: center;
     justify-content: center;
     color: var(--greyish);
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 3rem;
     font-family: 'Kumbh Sans', sans-serif;
     font-style: italic;
+    line-height: 4rem;
 }
 .about-content button {
     background-color: var(--greyish);
     color: var(--whitish);
     text-align: center;
     border-radius: 10px;
-    padding: 1% 3%;
+    padding: 2% 3%;
     font-size: 2rem;
-    width: 15%;
+    width: 25%;
     margin-bottom: 4%;
 }
 
@@ -201,7 +201,7 @@ h2 {
     padding: 2%;
 }
 .features-container img {
-    width: 140px;
+    width: 150px;
     background-color: var(--whitish);
     padding: 5%;
     border-radius: 10px;
@@ -247,7 +247,7 @@ h5 {
 }
 .ind-team-containers img {
     border-radius: 10px;
-    padding-bottom: 5%;
+    margin-bottom: 5%;
     width: 100%;
 }
 .ind-team-containers p {
@@ -320,14 +320,14 @@ small {
     }
 }
 
-/* Desktop Styles - 1500px */
+/* Desktop Styles - 1400px */
 
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1400px){
 
-    /* Main-Content Styles - Desktop - 1500px */
+    /* Main-Content Styles - Desktop - 1400px */
 
     .main-content p {
-        transform: translate(-50%,-100%);
+        transform: translate(-50%,-300%);
     }
 }
 
@@ -338,16 +338,51 @@ small {
     /* Main-Content Styles - Desktop - 1500px */
 
     .main-content p {
-        transform: translate(-50%,-100%);
+        transform: translate(-50%,-350%);
+    }
+    
+}
 
+/* Desktop Styles - 1155px */
+
+@media only screen and (max-width: 1155px){
+    /* Main-Content Styles - Desktop - 1100px */
+
+    .main-content p {
+        transform: translate(-50%,-200%);
+    }
+}
+
+/* Desktop Styles - 1100px */
+
+@media only screen and (max-width: 1100px){
+
+    /* About-Content Styles - Desktop - 1100px */
+
+    .about-content p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+/* Desktop Styles - 1015px */
+
+@media only screen and (max-width: 1015px){
+
+    /* Main-Content Styles - Desktop - 1015px */
+
+    .main-content p {
+        transform: translate(-50%,-225%);
+        width: 80%;
     }
 }
 
 /* Desktop Styles - 1000px */
 
-/* Header Styles - Desktop - 1000px */
-
 @media only screen and (max-width: 1000px) {
+
+    /* Header Styles - Desktop - 1000px */
+
     .links a {
         padding: 2%;
     }
@@ -357,9 +392,38 @@ small {
     h1 {
         width: max-content;
     }
+
+    /* Main-Content Styles - Desktop - 1000px */
+
+    .main-content p {
+        transform: translate(-50%,-225%);
+    }
+
+    /* About-Content Styles - Desktop - 1000px */
+
+    .about-content p {
+        font-size: 2rem;
+    }
 }
 
-/* Tablet Styles */
+/* Tablet Styles - 900px */
+
+@media only screen and (max-width: 900px){
+
+    /* Main-Content Styles - Tablet - 900px */
+
+    .main-content p {
+        transform: translate(-50%,-250%);
+    }
+
+    /* About-Content Styles - Tablet - 900px */
+
+    .about-content p {
+        line-height: 2.5rem;
+    }
+}
+
+/* Tablet Styles - 800px */
 
 @media only screen and (max-width: 800px){
 
@@ -392,13 +456,7 @@ small {
     /* About-Content Styles - Tablet - 800px */
 
     .about-content p {
-        font-size: 2rem;
         line-height: 2.5rem;
-    }
-    .about-content button {
-        padding: 2% 3%;
-        font-size: 2rem;
-        width: 30%;
     }
 
     /* Features Styles - Tablet - 800px */
@@ -438,11 +496,11 @@ small {
     }
 }
 
-/* Phone Styles - Portrait */
+/* Phone Styles - Portrait - 500px */
 
 @media only screen and (max-width: 500px) and (orientation: portrait){
 
-    /* Header Styles - Phone - Portrait */
+    /* Header Styles - Phone - Portrait - 500px */
 
 	html {
 		font-size: 30%;
@@ -452,7 +510,7 @@ small {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 20vh;
+        height: 10vh;
 	}
 	h1 {
 		font-size: 5rem;
@@ -481,33 +539,32 @@ small {
 		line-height: 4rem;
         font-size: 3.5rem;
         padding: 0 3%;
-	}
-
-    /* Main-Content Styles - Phone - Portrait */
-
-    .main-content p {
-        transform: translate(-50%,-50%);
-
     }
 
-    /* About-Content Styles - Phone - Portrait */
+    /* Main-Content Styles - Phone - Portrait - 500px */
+
+    .main-content p {
+        font-size: 7rem;
+        line-height: 9rem;
+        transform: translate(-50%,-50%);
+    }
+
+    /* About-Content Styles - Phone - Portrait - 500px */
 
     .about-content {
         padding: 3% 0;
     }
     .about-content p {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 4rem;
+        line-height: 5rem;
         width: 80%;
-        font-style: italic;
     }
     .about-content button {
-        padding: 2% 3%;
+        font-size: 4rem;
         width: 30%;
-        font-size: 3rem;
     }
 
-    /* Features Styles - Phone - Portrait */
+    /* Features Styles - Phone - Portrait - 500px */
 
     h2 {
         padding: 5% 0;
@@ -543,13 +600,16 @@ small {
         line-height: 3.5rem;
     }
 
-    /* Meet the Team - Phone - Portrait */
+    /* Meet the Team - Phone - Portrait - 500px */
 
     .ind-team-containers {
         width:40%;
         color: var(--darkergreen);
         text-align: center;
         padding: 1% 3%;
+    }
+    .ind-team-containers img{
+        border-radius: 15px;
     }
     h4 {
         color: var(--greyish);
@@ -567,7 +627,7 @@ small {
         line-height: 2.5rem;
     }
 
-    /* Footer Styles - Phone - Portrait */
+    /* Footer Styles - Phone - Portrait - 500px */
 
     footer {
         height: 15vh;
@@ -589,11 +649,29 @@ small {
     }
 }
 
-/* Phone Styles - Landscape */
+@media only screen and (max-width: 400px) and (orientation: portrait){
+
+    /* Main-Content Styles - Phone - Portrait - 400px */
+
+    .main-content p {
+        font-size: 5rem;
+        line-height: 6rem;
+        transform: translate(-50%,-50%);
+    }
+
+    /* About-Content Styles - Phone - Portrait - 400px */
+
+    .about-content p {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+/* Phone Styles - Landscape - 800px */
 
 @media (max-width: 800px) and (orientation: landscape){
 
-    /* Header Styles - Phone - Landscape */
+    /* Header Styles - Phone - Landscape - 800px */
 
     nav {
         height: 15vh;
@@ -612,7 +690,7 @@ small {
         font-size: 1.5rem;
     }
 
-    /* Footer Styles - Phone - Landscape */
+    /* Footer Styles - Phone - Landscape - 800px */
 
     footer {
         height: 10vh;

@@ -124,6 +124,11 @@ h1 {
 
 /* Main-Content Styles - Desktop */
 
+.peachy {
+    background-color: var(--peachy);
+    padding:0.5;
+    height:2vh;
+}
 .main-content img {
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
@@ -142,19 +147,6 @@ h1 {
     line-height: 8rem;
     width: 80%;
 }
-.peachy{
-    background-color: var(--peachy);
-    padding:0.5;
-    height:2vh;
-}
-.pastelgreen {
-    background-color: var(--pastelgreen);
-    padding:0.5%;
-}
-.pastelgreen p{
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
 
 /* Intro-Content Styles - Desktop */
 
@@ -166,7 +158,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.intro-content p{
+.intro-content p {
     text-align: center;
     padding:4%;
     display: flex;
@@ -174,11 +166,10 @@ h1 {
     justify-content: center;
     color: var(--greyish);
     font-size: 3rem;
-    line-height: 2rem;
     font-family: 'Kumbh Sans', sans-serif;
     font-style: italic;
 }
-h2{
+h2 {
     text-align: center;
     padding: 3% 0;
     font-size: 4rem;
@@ -244,7 +235,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
-.blog-posts p{
+.blog-posts p {
     font-size: 2.5rem;
     line-height: 3rem;
     margin-left: auto;
@@ -321,7 +312,7 @@ small {
 
     /* Blog-Posts Styles - Desktop - 1900px */
 
-    .blog-content ul{
+    .blog-content ul {
         padding: 0;
     }
 }
@@ -355,7 +346,6 @@ small {
     button {
         font-size: 3rem;
     }
-
 }
 
 /* Desktop Styles - 1700px */
@@ -404,12 +394,6 @@ small {
 
 @media only screen and (max-width: 1500px){
 
-    /* Main-Content Styles - Desktop - 1500px */
-
-    .main-content p {
-        transform: translate(-50%,-250%);
-    }
-
     /* Blog-Posts Styles - Desktop - 1500px */
 
     .blog-container1-3 {
@@ -431,7 +415,7 @@ small {
     .blog-posts h3 {
         width: 90%;
     }
-    .blog-posts p{
+    .blog-posts p {
         width: 100%;
     }
     .blog-posts ul {
@@ -462,7 +446,6 @@ small {
 
     .main-content p {
         transform: translate(-50%,-350%);
-
     }
 
     /* Blog-Posts Styles - Desktop - 1200px */
@@ -492,7 +475,7 @@ small {
         margin-left: auto;
         margin-right: auto;
     }
-    .blog-posts p{
+    .blog-posts p {
         width: 90%;
     }
     .blog-posts ul {
@@ -520,7 +503,7 @@ small {
 
     /* Intro-Content Styles - Desktop - 1100px */
 
-    .intro-content p{
+    .intro-content p {
         font-size: 2.5rem;
         line-height: 2rem;
     }
@@ -547,9 +530,10 @@ small {
 
 /* Desktop Styles - 1000px */
 
-/* Header Styles - Desktop - 1000px */
-
 @media only screen and (max-width: 1000px) {
+
+    /* Header Styles - Desktop - 1000px */
+
     .links a {
         padding: 2%;
     }
@@ -559,6 +543,7 @@ small {
     h1 {
         width: max-content;
     }
+    
     /* Main-Content Styles - Desktop - 1000px */
 
     .main-content p {
@@ -567,7 +552,7 @@ small {
 
     /* Intro-Content Styles - Desktop - 1000px */
 
-    .intro-content p{
+    .intro-content p {
         font-size: 2rem;
     }
 
@@ -607,7 +592,7 @@ small {
     .blog-posts h3 {
         font-size: 3rem;
     }
-    .blog-posts p{
+    .blog-posts p {
         font-size: 2rem;
     }
 }
@@ -617,14 +602,14 @@ small {
 @media only screen and (max-width: 800px){
     
     /* Header Styles - Tablet - 800px */
-    .links a{
+
+    .links a {
         font-size: 1.5rem;
     }
-    h1{
+    h1 {
         font-size: 2rem;
-        width: 25%;
     }
-    .login a{
+    .login a {
         font-size: 1.5rem;
     }
 
@@ -644,7 +629,7 @@ small {
 
     /* Intro-Content Styles - Tablet - 800px */
 
-    .intro-content p{
+    .intro-content p {
         line-height: 2.5rem;
     }
 
@@ -677,13 +662,13 @@ small {
 
     /* Blog-Posts Styles - Phone - Portrait - 700px */
 
-    .blog-container1-3{
+    .blog-container1-3 {
         border-radius: 20px;
     }
-    .blog-container2-4{
+    .blog-container2-4 {
         border-radius: 20px;
     }
-    .blog-posts img{
+    .blog-posts img {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
@@ -691,30 +676,29 @@ small {
         margin-bottom: 5%;
         border-radius: 20px;
     }
-    .blog-posts h3{
+    .blog-posts h3 {
         font-size: 3rem;
         line-height: 4rem;
         padding: 0;
     }
-    .blog-posts p{
+    .blog-posts p {
         font-size: 2rem;
         line-height: 3rem;
         margin-top: 3%;
     }
-    .blog-posts ul{
+    .blog-posts ul {
         font-size: 1.8rem;
         line-height: 3rem;
         padding: 0;
         width: 80%;
     }
-    button{
+    button {
         border-radius: 10px;
         font-size: 3rem;
         margin: 5% 0;
         padding: 3% 0;
         width: 40%;   
     }
-
 }
 
 /* Phone Styles - Portrait - 500px */
@@ -768,15 +752,14 @@ small {
         font-size: 7rem;
         line-height: 9rem;
         transform: translate(-50%,-50%);
-
     }
 
     /* Intro-Content Styles - Phone - Portrait - 500px */
 
-    .intro-content{
+    .intro-content {
         padding: 3% 0;
     }
-    .intro-content p{
+    .intro-content p {
         font-size: 4rem;
         line-height: 5rem;
         width: 80%;
@@ -788,12 +771,12 @@ small {
         font-size: 4rem;
         padding: 5% 0;
     }
-    .blog-posts{
+    .blog-posts {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .blog-container1-3{
+    .blog-container1-3 {
         background-color: var(--peachy);
         width: 90%;
         border-radius: 30px;
@@ -803,7 +786,7 @@ small {
         padding-top: 2%;
         padding-bottom: 5%;
     }
-    .blog-container2-4{
+    .blog-container2-4 {
         background-color: var(--pastelgreen);
         width: 90%;
         border-radius: 30px;
@@ -813,7 +796,7 @@ small {
         padding-top: 2%;
         padding-bottom: 5%;
     }
-    .blog-posts img{
+    .blog-posts img {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
@@ -821,22 +804,22 @@ small {
         margin-bottom: 5%;
         border-radius: 20px;
     }
-    .blog-posts h3{
+    .blog-posts h3 {
         font-size: 4.5rem;
         line-height: 6rem;
         color: var(--greyish);
         width: 90%;
     }
-    .blog-posts p{
+    .blog-posts p {
         font-size: 3.3rem;
         line-height: 4rem;
     }
-    .blog-posts ul{
+    .blog-posts ul {
         font-size: 2.5rem;
         line-height: 4rem;
         width: 80%;
     }
-    button{
+    button {
         border-radius: 10px;
         font-size: 3.5rem;
         margin: 8% 0;
@@ -878,7 +861,7 @@ small {
 
     /* Intro-Content Styles - Phone - Portrait - 400px */
 
-    .intro-content p{
+    .intro-content p {
         font-size: 3rem;
         line-height: 4rem;
     }
@@ -891,19 +874,19 @@ small {
     .blog-container2-4 {
         margin-bottom: 7%;
     }
-    .blog-posts h3{
+    .blog-posts h3 {
         font-size: 4rem;
         line-height: 5rem;
     }
-    .blog-posts p{
+    .blog-posts p {
         font-size: 3rem;
         line-height: 4rem;
     }
-    .blog-posts ul{
+    .blog-posts ul {
         font-size: 2.3rem;
         line-height: 3rem;
     }
-    button{
+    button {
         border-radius: 10px;
         font-size: 3.5rem;
         margin: 8% 0;
