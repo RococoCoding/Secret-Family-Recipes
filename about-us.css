@@ -163,7 +163,7 @@ h1 {
     font-style: italic;
     line-height: 4rem;
 }
-.about-content button {
+.about-content a button {
     background-color: var(--greyish);
     color: var(--whitish);
     text-align: center;
@@ -185,11 +185,11 @@ h2 {
 .app-features {
     display: flex;
     background-color: var(--peachy);
-    padding: 3%;
     width: 80%;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding: 3%;
 }
 .features-container {
     display: flex;
@@ -421,6 +421,82 @@ small {
     .about-content p {
         line-height: 2.5rem;
     }
+
+    /* Features Styles - Tablet - 900px */
+
+    h2 {
+        font-size: 3.5rem;
+    }
+    .app-features {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .features-container {
+        padding: 0;
+    }
+    .features-container img {
+        width: 100px;
+        background-color: var(--whitish);
+        padding: 5%;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+    h3 {
+        padding-top: 4%;
+        padding-bottom: 2%;
+        font-size: 2.5rem;
+    }
+    .features-container p{
+        padding-bottom: 5%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        width: 80%;
+    }
+    .features-content {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    /* Meet-the-Team Styles - Tablet - 900px */
+
+    .team-container {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 3%;
+    }
+    .ind-team-containers {
+        width:20%;
+        color: var(--darkergreen);
+        text-align: center;
+        padding: 1% 2%;
+    }
+    .ind-team-containers img {
+        border-radius: 10px;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .ind-team-containers h4 {
+        color: var(--greyish);
+        font-size: 2rem;
+    }
+    .ind-team-containers h5 {
+        color: var(--greyish);
+        padding: 3%;
+    }
+    .ind-team-containers p {
+        padding: 2% 0;
+        font-size: 1.5rem;
+        font-family: 'Kumbh Sans', sans-serif;
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 2rem;
+        font-style: italic;
+    }
 }
 
 /* Tablet Styles - 800px */
@@ -462,15 +538,7 @@ small {
     /* Features Styles - Tablet - 800px */
 
     h2 {
-        padding: 5% 0;
-    }
-    .app-features {
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-    }
-    .features-container {
-        padding: 0;
+        font-size: 2.5rem;
     }
     .features-container img {
         width: 100px;
@@ -559,7 +627,7 @@ small {
         line-height: 5rem;
         width: 80%;
     }
-    .about-content button {
+    .about-content a button {
         font-size: 4rem;
         width: 30%;
     }
@@ -567,6 +635,7 @@ small {
     /* Features Styles - Phone - Portrait - 500px */
 
     h2 {
+        font-size: 4rem;
         padding: 5% 0;
     }
     .app-features {
@@ -611,12 +680,12 @@ small {
     .ind-team-containers img{
         border-radius: 15px;
     }
-    h4 {
+    .ind-team-containers h4 {
         color: var(--greyish);
         font-size: 3.5rem;
         line-height: 4rem;
     }
-    h5 {
+    .ind-team-containers h5 {
         font-size: 3rem;
     }
     .ind-team-containers p {
