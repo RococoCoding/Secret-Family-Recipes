@@ -296,7 +296,7 @@ small {
     /* Main-Content Styles - Desktop - 2200px */
 
     .main-content p {
-        transform: translate(-50%,-150%);
+        transform: translate(-50%,-50%);
     }
 }
 
@@ -307,7 +307,7 @@ small {
     /* Main-Content Styles - Desktop - 1900px */
 
     .main-content p {
-        transform: translate(-50%,-200%);
+        transform: translate(-50%,-50%);
     }
 
     /* Blog-Posts Styles - Desktop - 1900px */
@@ -355,7 +355,7 @@ small {
     /* Main-Content Styles - Desktop - 1700px */
 
     .main-content p {
-        transform: translate(-50%,-250%);
+        transform: translate(-50%,-50%);
     }
 
     /* Blog-Posts Styles - Desktop - 1700px */
@@ -434,7 +434,7 @@ small {
     /* Main-Content Styles - Desktop - 1400px */
 
     .main-content p {
-        transform: translate(-50%,-300%);
+        transform: translate(-50%,-50%);
     }
 }
 
@@ -445,7 +445,7 @@ small {
     /* Main-Content Styles - Desktop - 1200px */
 
     .main-content p {
-        transform: translate(-50%,-350%);
+        transform: translate(-50%,-75%);
     }
 
     /* Blog-Posts Styles - Desktop - 1200px */
@@ -498,7 +498,7 @@ small {
     /* Main-Content Styles - Desktop - 1100px */
 
     .main-content p {
-        transform: translate(-50%,-400%);
+        transform: translate(-50%,-75%);
     }
 
     /* Intro-Content Styles - Desktop - 1100px */
@@ -523,7 +523,7 @@ small {
     /* Main-Content Styles - Desktop - 1100px */
 
     .main-content p {
-        transform: translate(-50%,-225%);
+        transform: translate(-50%,-75%);
         width: 80%;
     }
 }
@@ -547,7 +547,7 @@ small {
     /* Main-Content Styles - Desktop - 1000px */
 
     .main-content p {
-        transform: translate(-50%,-225%);
+        transform: translate(-50%,-75%);
     }
 
     /* Intro-Content Styles - Desktop - 1000px */
@@ -581,7 +581,7 @@ small {
     /* Main-Content Styles - Tablet - 900px */
 
     .main-content p {
-        transform: translate(-50%,-250%);
+        transform: translate(-50%,-100%);
     }
 
     /* Blog-Posts Styles - Tablet - 900px */
@@ -715,7 +715,7 @@ small {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 10vh;
+        height: 20vh;
 	}
 	h1 {
 		font-size: 5rem;
