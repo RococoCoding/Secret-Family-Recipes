@@ -287,6 +287,28 @@ small {
     color: var(--pastelgreen);
 }
 
+/* Desktop Styles - 2200px */
+
+@media only screen and (max-width: 2200px){
+
+    /* Main-Content Styles - Desktop - 2200px */
+
+    .main-content p {
+        transform: translate(-50%,-150%);
+    }
+}
+
+/* Desktop Styles - 1900px */
+
+@media only screen and (max-width: 1900px){
+
+    /* Main-Content Styles - Desktop - 1900px */
+
+    .main-content p {
+        transform: translate(-50%,-200%);
+    }
+}
+
 /* Desktop Styles - 1700px */
 
 @media only screen and (max-width: 1700px){
@@ -294,7 +316,7 @@ small {
     /* Main-Content Styles - Desktop - 1500px */
 
     .main-content p {
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-250%);
     }
 }
 
