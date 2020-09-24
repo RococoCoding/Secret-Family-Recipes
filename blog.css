@@ -250,6 +250,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    margin-bottom: 3%;
 }
 .blog-posts ul {
     font-family: 'Noto Serif', serif;
@@ -266,7 +267,7 @@ button {
     color: var(--whitish);
     border-radius: 10px;
     font-size: 2rem;
-    margin: 3%;
+    margin-bottom: 3%;
 }
 .white-box {
     padding: 2%;
@@ -317,8 +318,45 @@ small {
     .main-content p {
         transform: translate(-50%,-200%);
     }
+
+    /* Blog-Posts Styles - Desktop - 1900px */
+
+    .blog-content ul{
+        padding: 0;
+    }
 }
 
+/* Desktop Styles - 1800px */
+
+@media only screen and (max-width: 1800px){
+
+    /* Blog-Posts Styles - Desktop - 1800px */
+
+    .blog-container1-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .blog-container2-4 {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .blog-posts img {
+        width:50%;
+    }
+    .blog-posts p{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+    .blog-posts ul {
+        padding-bottom: 3%;
+    }
+    button {
+        font-size: 3rem;
+    }
+
+}
 
 /* Desktop Styles - 1700px */
 
@@ -343,53 +381,23 @@ small {
         margin-bottom: 3%;
     }
     .blog-posts img {
-        width:50%;
+        width: 60%;
         margin-bottom: 3%;
         border-radius: 30px;
-        padding-left:
     }
     .blog-posts h3 {
         width: 90%;
     }
     .blog-posts p{
         width: 90%;
-        padding-bottom: 3%;
     }
     .blog-posts ul {
-        padding-bottom: 5%;
+        padding-bottom: 4%;
     }
     button {
         width: 30%;
         margin-bottom: 3%;
     }
-}
-
-/* Desktop Styles - 1800px */
-
-@media only screen and (max-width: 1800px){
-
-    /* Blog-Posts Styles - Desktop - 1800px */
-
-    .blog-container1-3 {
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-    }
-    .blog-container2-4 {
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-    }
-    .blog-posts img {
-        width:50%;
-    }
-    .blog-posts ul {
-        padding: 0;
-    }
-    button {
-        font-size: 3rem;
-    }
-
 }
 
 /* Desktop Styles - 1500px */
@@ -415,17 +423,15 @@ small {
         margin-bottom: 3%;
     }
     .blog-posts img {
-        width:50%;
+        width: 70%;
         margin-bottom: 3%;
         border-radius: 30px;
-        padding-left:
     }
     .blog-posts h3 {
         width: 90%;
     }
     .blog-posts p{
-        width: 80%;
-        padding-bottom: 3%;
+        width: 100%;
     }
     .blog-posts ul {
         padding-bottom: 5%;
@@ -462,30 +468,22 @@ small {
 
     .blog-container1-3 {
         border-radius: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 90%;
         padding: 2% 0;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3%;
     }
     .blog-container2-4 {
-        background-color: var(--pastelgreen);
         width: 90%;
         border-radius: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 2% 0;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3%;
     }
     .blog-posts img {
-        width:50%;
-        margin-left: auto;
-        margin-right: auto;
+        width:70%;
         margin-bottom: 3%;
         border-radius: 30px;
     }
@@ -494,8 +492,7 @@ small {
         margin-right: auto;
     }
     .blog-posts p{
-        margin-left: auto;
-        margin-right: auto;
+        width: 90%;
     }
     .blog-posts ul {
         padding-bottom: 5%;
@@ -525,6 +522,13 @@ small {
     .intro-content p{
         font-size: 2.5rem;
         line-height: 2rem;
+    }
+
+    /* Blog-Posts Styles - Desktop - 1100px */
+
+    button {
+        width: 35%;
+        margin-bottom: 3%;
     }
 }
 
@@ -560,10 +564,27 @@ small {
         transform: translate(-50%,-225%);
     }
 
-    /* Intro-Content Styles - Desktop - 1100px */
+    /* Intro-Content Styles - Desktop - 1000px */
 
     .intro-content p{
         font-size: 2rem;
+    }
+
+    /* Blog-Posts Styles - Desktop - 1000px */
+
+    .blog-posts h3 {
+        font-size: 3.5rem;
+    }
+    .blog-posts p{
+        font-size: 2rem;
+    }
+    .blog-posts ul {
+        font-size: 1.8rem;
+    }
+    button {
+        width: 26%;
+        padding: 1.5% 0;
+        font-size: 2.5rem;
     }
 }
 
@@ -582,6 +603,12 @@ small {
     .blog-posts h2 {
         font-size: 3.5rem;
     }
+    .blog-posts h3 {
+        font-size: 3rem;
+    }
+    .blog-posts p{
+        font-size: 2rem;
+    }
 }
 
 /* Tablet Styles - 800px */
@@ -589,12 +616,12 @@ small {
 @media only screen and (max-width: 800px){
     
     /* Header Styles - Tablet - 800px */
-
     .links a{
         font-size: 1.5rem;
     }
     h1{
         font-size: 2rem;
+        width: 25%;
     }
     .login a{
         font-size: 1.5rem;
@@ -622,24 +649,71 @@ small {
 
     /* Blog-Posts Styles - Tablet - 800px */
 
-    .blog-posts h2{
+    .blog-posts h2 {
         font-size: 2.5rem;
     }
-    .blog-posts img{
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    .blog-posts img {
+        width: 60%;
         border-radius: 40px;
     }
-    .blog-container1-3{
+    .blog-container1-3 {
         padding: 2% 0;
     }
-    .blog-container2-4{
+    .blog-container2-4 {
         padding: 2% 0;
     }
-    .blog-content h3{
+    .blog-content h3 {
         font-size: 3rem;
     }
+    button {
+        width: 30%;
+    }
+}
+
+/* Phone Styles - Portrait - 700px */
+
+@media only screen and (max-width: 700px) and (orientation: portrait){
+
+    /* Blog-Posts Styles - Phone - Portrait - 700px */
+
+    .blog-container1-3{
+        border-radius: 20px;
+    }
+    .blog-container2-4{
+        border-radius: 20px;
+    }
+    .blog-posts img{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 20px;
+    }
+    .blog-posts h3{
+        font-size: 3rem;
+        line-height: 4rem;
+        padding: 0;
+    }
+    .blog-posts p{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 3%;
+    }
+    .blog-posts ul{
+        font-size: 1.8rem;
+        line-height: 3rem;
+        padding: 0;
+        width: 80%;
+    }
+    button{
+        border-radius: 10px;
+        font-size: 3rem;
+        margin: 5% 0;
+        padding: 3% 0;
+        width: 40%;   
+    }
+
 }
 
 /* Phone Styles - Portrait - 500px */
@@ -656,7 +730,7 @@ small {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 20vh;
+        height: 10vh;
 	}
 	h1 {
 		font-size: 5rem;
