@@ -367,7 +367,7 @@ small {
     }
     .blog-container2-4 {
         border-radius: 30px;
-        padding: 2%;
+        padding: 2% 3%;
         margin-bottom: 3%;
     }
     .blog-posts img {
@@ -404,8 +404,9 @@ small {
     }
     .blog-container2-4 {
         border-radius: 30px;
-        padding: 2%;
+        padding: 2% 3%;
         margin-bottom: 3%;
+        width: 80%;
     }
     .blog-posts img {
         width: 70%;
