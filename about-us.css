@@ -265,6 +265,10 @@ h5 {
     line-height: 2rem;
     font-style: italic;
 }
+.ind-team-containers a img{
+    width: 20%;
+    margin: 0;
+}
 
 /* Footer Styles - Desktop */
 
