@@ -1,4 +1,4 @@
-# Project 2 - Secret Family Recipes  
+# Secret Family Recipes  
 **Timeline**: One week  
 **Tech**: HTML, CSS  
 **Description**: I want a place to store all my secret family recipes, handed down from generation to generation.  
